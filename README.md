@@ -211,7 +211,7 @@
 Вместе с методологией, советуем использовать следующие полезные практики, для улучшения своего кода:
 
 * [Google HTML/CSS style guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) - стайл гайд по оформлению HTML/CSS кода
-* [CSS Comb](http://csscomb.ru/) - полезный инструмент для сортировки CSS свойств
+* [CSScomb](http://csscomb.ru/) - инструмент для сортировки CSS-свойств в рамках селектора
 * [CSSDoc](http://cssdoc.net/) - правила оформления комментариев в CSS ([описание](http://habrahabr.ru/post/87406/))
 
 ### Словарь сокращений
