@@ -23,7 +23,7 @@
     .module { … }
   	
     .module_list { … }	
-      .module_list___modificator { … }		
+      .module_list__modificator { … }		
 	
     /* /Module name */
 	
@@ -66,13 +66,13 @@
 	.module { … }
 	
 	.module_list { … }
-		.module_list___modificator { … }	
+		.module_list__modificator { … }	
 	
 	/* /Module name */
 	
 Модификаторы могут использоваться в HTML только рядом с модифицируемым классом:
 
-	<div class="module_list module_list___modificator"></div>
+	<div class="module_list module_list__modificator"></div>
 
 Для определения названия из нескольких слов используется дефис **"-"**:
 
