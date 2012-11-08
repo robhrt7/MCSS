@@ -246,11 +246,11 @@ Cтандарт форм:
 
 ## Примеры использования
 
-Посмотреть взаимодействие слоёв на практике можно на [этой странице](http://operatino.github.com/MCSS/examples/layers). В примере, все слои поделены на секции в одном [CSS файле](http://operatino.github.com/MCSS/examples/layers/css/style.css), таким же образом можно делить содержание секций на отдельные файлы:
+Посмотреть взаимодействие слоёв на практике можно на [этой странице](http://operatino.github.com/MCSS/examples/layers/). В примере, все слои поделены на секции в одном [CSS файле](http://operatino.github.com/MCSS/examples/layers/css/style.css), таким же образом можно делить содержание секций на отдельные файлы:
 
 ![image](http://operatino.github.com/MCSS/images/file-system.png)
 
-Во [втором примере](http://operatino.github.com/MCSS/examples/mcss_with_bootstrap), изображено взаимодействие MCSS с [Bootstrap](http://twitter.github.com/bootstrap/), в качестве первого (базового) слоя.
+Во [втором примере](http://operatino.github.com/MCSS/examples/mcss_with_bootstrap/), изображено взаимодействие MCSS с [Bootstrap](http://twitter.github.com/bootstrap/), в качестве первого (базового) слоя.
 
 ## Рекомендации
 
