@@ -1,0 +1,253 @@
+/* Reset
+---------------------------------------------------------------------------------- */
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    font-size:12px;
+    color:#333;
+    }
+
+a {color:#666;text-decoration:none}
+    a:hover {color: #333; text-decoration: underline;}
+
+/* /Reset
+---------------------------------------------------------------------------------- */
+
+
+
+/* Base
+---------------------------------------------------------------------------------- */
+
+/* Forms
+-------------------------------------------------- */
+.form {
+    line-height: 1.5;
+    }
+
+.form_i { /* Form item */
+    clear: left;
+    margin-bottom: 15px;
+    }
+
+.it_w { /* input text wrapper */
+    position: relative;
+    padding-right: 5px;
+    *zoom: 1;
+    }
+
+	/* Context */
+    .ie8 .it_w {
+        top: 1px;
+        }
+
+.it { /* input text */
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 3px 0 4px 3px;
+    background-color: #fff;
+    border: #ccc solid 1px;
+    border-top: #999 solid 1px;
+    color: #333;
+    height: 17px; /* For win webkit */
+    line-height: 17px;
+    *line-height: 16px;
+    box-sizing: content-box;
+    font-size: 13px;
+    }
+
+	/* Context */
+    .ie8 .it {
+        line-height: 16px;
+        }
+
+/* Forms grid 1 2 */
+.form__gl-1-2 .form_i { /* Form item */
+    width: 450px;
+    margin-left: 115px;
+    }
+
+.form__gl-1-2 .input-l { /* Input label */
+    position: relative;
+    left: -115px;
+    width: 105px;
+    margin-right: -115px;
+    margin-bottom: 0;
+    margin-top: 4px; /* centering label horizontaly to form field */
+    float: left;
+    text-align: right;
+    }
+
+.form__gl-1-2 .it_w { /* Form input text wrapper */
+    width: 215px; /* 2 column width considering column and input paddings (5px) */
+    }
+/* /Forms grid 1 2 */
+
+/* /Forms */
+
+/* Promo button
+
+* don't use 'promo' in class names, to not get blocked by AdBlock
+
+-------------------------------------------------- */
+.button-pro {
+    position: relative;
+    margin: 0;
+    padding: 4px 14px 6px;
+    *padding: 3px 14px 5px;
+    border: 0;
+    overflow: visible;
+    color: #fff;
+    font: 500 14px Arial;
+    cursor: pointer;
+    white-space: nowrap; /* fixing IE9 bug with few words in button  */
+
+    text-shadow: 0 -1px 0 #458f11;
+
+    border-radius: 26px;
+
+    /* Gradient */
+    background-color: #1daa09;
+    background-repeat: repeat-x;
+    background-image: -moz-linear-gradient(top, #78d81f, #1daa09); /* FF3.6 */
+    background-image: -ms-linear-gradient(top, #78d81f, #1daa09); /* IE10 */
+    background-image: -o-linear-gradient(top, #78d81f, #1daa09); /* Opera 11.10+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#78d81f), to(#1daa09)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #78d81f, #1daa09); /* Chrome 10+, Saf5.1+ */
+    background-image: linear-gradient(top, #78d81f, #1daa09);
+    }
+
+    .button-pro:focus,
+    .button-pro:hover {
+        color: #fff;
+        background-color: #70ca1b;
+        background-position: 0 100%;
+        background-image: -moz-linear-gradient(top, #70ca1b, #169305);
+        background-image: -ms-linear-gradient(top, #70ca1b, #169305);
+        background-image: -o-linear-gradient(top, #70ca1b, #169305);
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#70ca1b), to(#169305));
+        background-image: -webkit-linear-gradient(top, #70ca1b, #169305);
+        background-image: linear-gradient(top, #70ca1b, #169305);
+        text-decoration: none;
+        }
+
+    .button-pro:active {
+        box-shadow: inset 0 0 6px 1px #169305;
+        }
+/* /Promo button */
+
+/* Tips
+-------------------------------------------------- */
+.iblock { /* info - blue bg with info icon (i) */
+    position: relative;
+    margin: 0 0 20px;
+    padding:11px 11px 11px 48px;
+    background: #d0ebf6 url(../i/ic/info.png) 15px 12px no-repeat;
+    line-height: 18px;
+    *font-size: 12px;
+    }
+
+    .iblock__warning { /* warning - red bg, with warning icon (!) */
+        background-color: #ffe9ea;
+        background-image: url(../i/ic/warning.png);
+        }
+
+.iblock_close {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    }
+
+/* /Tips */
+
+/* Icons
+-------------------------------------------------- */
+.ic10 {
+    width: 10px;
+    height: 10px;
+    *font-size: 0;
+    }
+
+.ic10_close {background-image: url(../i/ic/close.png);} /* sprite with hover-state */
+
+.ic10_close:hover {background-position: 0 100%;}
+/* /Icons */
+
+/* /Base
+---------------------------------------------------------------------------------- */
+
+
+
+/* Project
+---------------------------------------------------------------------------------- */
+
+/* Login
+-------------------------------------------------- */
+
+.login {
+	padding: 10px;
+	border: solid 5px #E6E6E6;
+	border-radius: 10px;
+
+	background: url(../i/project/login/ok.png) 90% 90% no-repeat;
+	}
+
+	.login .iblock {
+		width: 50%;
+		box-sizing: border-box;
+		}
+
+	.login .input-l {
+		color: #999;
+		}
+
+.login_info {
+	margin-bottom: 1px;
+	}
+
+.login_error {
+	font-size: 15px;
+	}
+
+.login_submit {}
+
+.login_additional-b {
+	margin-left: 15px;
+
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	}
+
+/* /Login */
+
+/* /Project
+---------------------------------------------------------------------------------- */
+
+
+
+/* Cosmetic
+---------------------------------------------------------------------------------- */
+
+/* Links
+-------------------------------------------------- */
+.link {cursor: pointer;}
+
+    .link[tabindex]:hover:focus {outline:none;} /* for imitated links */
+
+/* Action Link */
+.al {
+    color: #eb722e;
+    cursor: pointer;
+    }
+
+    .al:hover {
+        color: #b84819;
+        text-decoration: underline; /* for span tag links */
+        }
+/* /Action Link */
+
+/* /Links */
+
+/* /Cosmetic
+---------------------------------------------------------------------------------- */

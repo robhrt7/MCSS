@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>MCSS + Bootstrap example</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<!--Presentational styles-->
+<style>
+    .pres-section {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+
+        margin: 10px;
+        }
+
+    .pres-descr {
+        font-size: 15px;
+        }
+
+    .pres-descr_lp {
+        font-size: .9em;
+        color: #999;
+        }
+</style>
+
+<section class="pres-section">
+    <h2 class="pres-section_header">Base from Bootstrap</h2>
+
+    <p class="pres-descr">.row, .span8, .alert, .btn</p>
+
+    <div class="row">
+        <form class="span8">
+            <div class="alert alert-success">
+                Information
+                <button type="button" class="close" data-dismiss="alert">×</button>
+            </div>
+            <div class="alert alert-success alert alert-error">
+                Error
+                <button type="button" class="close" data-dismiss="alert">×</button>
+            </div>
+            <div>
+                <div><label for="name1">Login</label></div>
+                <input type="text" id="name1">
+            </div>
+            <div>
+                <div><label for="password1">Password</label></div>
+                <input type="password" id="password1">
+            </div>
+            <div>
+                <button class="btn btn-success">Login</button>
+                <a href="#777">Forgot your password?</a>
+            </div>
+        </form>
+    </div>
+</section>
+<br>
+<section class="pres-section">
+    <h2 class="pres-section_header">Project</h2>
+
+    <p class="pres-descr">+ .login, .login_row, .login_info, .login_error, .login_label, .login_submit, .login_submit, .login_additional-b</p>
+
+    <div class="row">
+        <form class="login span8">
+            <div class="login_row">
+                <div class="login_info alert alert-success">
+                    Information
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                </div>
+            </div>
+            <div class="login_row">
+                <div class="login_error alert alert-success alert alert-error">
+                    Error
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                </div>
+            </div>
+            <div class="login_row">
+                <div class="login_label"><label for="name2">Login</label></div>
+                <input type="text" class="login_it" id="name2">
+            </div>
+            <div class="login_row">
+                <div class="login_label"><label for="password2">Password</label></div>
+                <input type="password" class="login_it" id="password2">
+            </div>
+            <div class="login_row">
+                <button class="login_submit btn btn-success">Login</button>
+                <div class="login_additional-b">
+                    <a href="#777">Forgot your password?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+<br>
+<section class="pres-section">
+    <h2 class="pres-section_header">All layers together</h2>
+
+    <p class="pres-descr">+ .al <span class="pres-descr_lp">(Action Link)</span></p>
+
+    <div class="row">
+        <form class="login span8">
+            <div class="login_row">
+                <div class="login_info alert alert-success">
+                    Information
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                </div>
+            </div>
+            <div class="login_row">
+                <div class="login_error alert alert-success alert alert-error">
+                    Error
+                    <button type="button" class="close" data-dismiss="alert">×</button>
+                </div>
+            </div>
+            <div class="login_row">
+                <div class="login_label"><label for="name3">Login</label></div>
+                <input type="text" class="login_it" id="name3">
+            </div>
+            <div class="login_row">
+                <div class="login_label"><label for="password3">Password</label></div>
+                <input type="password" class="login_it" id="password3">
+            </div>
+            <div class="login_row">
+                <button class="login_submit btn btn-success">Login</button>
+                <div class="login_additional-b">
+                    <a href="#777" class="al">Forgot your password?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

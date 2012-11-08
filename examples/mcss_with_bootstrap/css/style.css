@@ -1,0 +1,108 @@
+/* Reset
+---------------------------------------------------------------------------------- */
+
+/* From bootstrap.css */
+
+/* /Reset
+---------------------------------------------------------------------------------- */
+
+
+
+/* Base
+---------------------------------------------------------------------------------- */
+
+/* From bootstrap.css */
+
+/* /Base
+---------------------------------------------------------------------------------- */
+
+
+
+/* Project
+---------------------------------------------------------------------------------- */
+
+/* Login
+-------------------------------------------------- */
+
+.login {
+	padding: 10px;
+	border: solid 5px #E6E6E6;
+	border-radius: 10px;
+
+	background: url(../i/project/login/ok.png) 90% 90% no-repeat;
+	}
+
+	.login .alert {
+		width: 70%;
+		box-sizing: border-box;
+		}
+
+.login_info {
+	margin-bottom: 1px;
+	}
+
+.login_error {
+	font-size: 20px;
+	}
+
+.login_row {
+	width: 450px;
+	margin-left: 115px;
+	}
+
+.login_label {
+	position: relative;
+	left: -115px;
+	width: 105px;
+	margin-right: -115px;
+	margin-bottom: 0;
+	margin-top: 5px; /* centering label horizontaly to form field */
+	float: left;
+
+	text-align: right;
+	color: #999;
+	}
+
+.login_it {
+	width: 208px;
+	}
+
+.login_submit {}
+
+.login_additional-b {
+	margin-left: 15px;
+
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	}
+
+/* /Login */
+
+/* /Project
+---------------------------------------------------------------------------------- */
+
+
+
+/* Cosmetic
+---------------------------------------------------------------------------------- */
+
+/* Links
+-------------------------------------------------- */
+
+/* Action Link */
+.al {
+	color: #eb722e;
+	cursor: pointer;
+	}
+
+	.al:hover {
+		color: #b84819;
+		text-decoration: underline; /* for span tag links */
+		}
+/* /Action Link */
+
+/* /Links */
+
+/* /Cosmetic
+---------------------------------------------------------------------------------- */
