@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<title>Layers example</title>
+<link rel="stylesheet" href="css/style.css">
+
+<!--Presentational styles-->
+<style>
+    .pres-section {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+
+        margin: 10px;
+        }
+
+    .pres-descr {
+        font-size: 15px;
+        }
+
+    .pres-descr_lp {
+        font-size: .9em;
+        color: #999;
+        }
+</style>
+
+<section class="pres-section">
+    <h2 class="pres-section_header">Base</h2>
+
+    <p class="pres-descr">.form_*, .iblock_*, .button-pro_*, .ic10_*</p>
+
+    <form class="form form__gl-1-2">
+        <div class="form_i iblock">
+            Information
+            <span class="iblock_close ic10 ic10_close" tabindex=0></span>
+        </div>
+        <div class="form_i iblock iblock__warning">
+            Error
+            <span class="iblock_close ic10 ic10_close" tabindex=0></span>
+        </div>
+        <div class="form_i">
+            <div class="input-l"><label for="name1">Login</label></div>
+            <div class="it_w">
+                <input type="text" class="it" id="name1">
+            </div>
+        </div>
+        <div class="form_i">
+            <div class="input-l"><label for="password1">Password</label></div>
+            <div class="it_w">
+                <input type="password" class="it" id="password1">
+            </div>
+        </div>
+        <div class="form_i">
+            <button class="button-pro">Login</button>
+            <a href="#777">Forgot your password?</a>
+        </div>
+    </form>
+</section>
+<br>
+<section class="pres-section">
+    <h2 class="pres-section_header">Project</h2>
+
+    <p class="pres-descr">+ .login, .login_info, .login_error, .login_submit, .login_submit, .login_additional-b</p>
+
+    <form class="login form form__gl-1-2">
+        <div class="login_info form_i iblock">
+            Information
+            <span class="iblock_close ic10 ic10_close" tabindex=0></span>
+        </div>
+        <div class="login_error form_i iblock iblock__warning">
+            Error
+            <span class="iblock_close ic10 ic10_close" tabindex=0></span>
+        </div>
+        <div class="form_i">
+            <div class="input-l"><label for="name2">Login</label></div>
+            <div class="it_w">
+                <input type="text" class="it" id="name2">
+            </div>
+        </div>
+        <div class="form_i">
+            <div class="input-l"><label for="password2">Password</label></div>
+            <div class="it_w">
+                <input type="password" class="it" id="password2">
+            </div>
+        </div>
+        <div class="form_i">
+            <button class="login_submit button-pro">Login</button>
+            <div class="login_additional-b">
+                <a href="#777">Forgot your password?</a>
+            </div>
+        </div>
+    </form>
+</section>
+<br>
+<section class="pres-section">
+    <h2 class="pres-section_header">All layers together</h2>
+
+    <p class="pres-descr">+ .al <span class="pres-descr_lp">(Action Link)</span>, .link</p>
+
+    <form class="login form form__gl-1-2">
+        <div class="login_info form_i iblock">
+            Information
+            <span class="iblock_close ic10 ic10_close link" tabindex=0></span>
+        </div>
+        <div class="login_error form_i iblock iblock__warning">
+            Error
+            <span class="iblock_close ic10 ic10_close link" tabindex=0></span>
+        </div>
+        <div class="form_i">
+            <div class="input-l"><label for="name3">Login</label></div>
+            <div class="it_w">
+                <input type="text" class="it" id="name3">
+            </div>
+        </div>
+        <div class="form_i">
+            <div class="input-l"><label for="password3">Password</label></div>
+            <div class="it_w">
+                <input type="password" class="it" id="password3">
+            </div>
+        </div>
+        <div class="form_i">
+            <button class="login_submit button-pro">Login</button>
+            <div class="login_additional-b">
+                <a href="#777" class="al">Forgot your password?</a>
+            </div>
+        </div>
+    </form>
+</section>
