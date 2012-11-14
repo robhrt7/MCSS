@@ -90,7 +90,7 @@
 
 Стили фундамента, как и все ресеты, подключаются с самого начала, либо в отдельном файле, либо в начале единого CSS файла.
 
-## Компановка модулей
+## Компоновка модулей
 
 ![image](http://operatino.github.com/MCSS/images/layers.jpg)
 
@@ -260,7 +260,7 @@ Cтандарт форм:
 ### Code style
 Вместе с методологией советуем использовать следующие полезные практики для улучшения своего кода:
 
-* [Google HTML/CSS style guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) - стайл гайд по оформлению HTML/CSS кода
+* [Google HTML/CSS style guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) - стайл-гайд по оформлению HTML и CSS кода
 * [CSScomb](http://csscomb.ru/) - инструмент для сортировки CSS-свойств в рамках селектора
 * [CSSDoc](http://cssdoc.net/) - правила оформления комментариев в CSS ([описание](http://habrahabr.ru/post/87406/))
 
