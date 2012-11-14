@@ -60,42 +60,39 @@
       <p>Стили каждого модуля должны храниться рядом друг с другом, можно их выделять как в закомментированные секции, так и в отдельные файлы:</p>
 
 <pre><code>/* Module name
-           -------------------------------------------------- */
+-------------------------------------------------- */
 
-           .module { … }
+.module { … }
 
-           .module_list { … }
-           .module_list__modificator { … }
+.module_list { … }
+    .module_list__modificator { … }
 
-           /* /Module name */
-</code></pre>
+/* /Module name */</code></pre>
 
       <p>Селекторы, модифицируемые каскадом, должны так же храниться рядом с родительским классом:</p>
 
 <pre><code>/* Module name
-           -------------------------------------------------- */
+-------------------------------------------------- */
 
-           .module { … }
+.module { … }
 
-           .module_list { … }
-           .module_list .other-module { … }
+.module_list { … }
+    .module_list .other-module { … }
 
-           /* /Module name */
-</code></pre>
+/* /Module name */</code></pre>
 
       <p>Исключением могут быть только классы из слоя контекста:</p>
 
 <pre><code>/* Module name
-           -------------------------------------------------- */
+-------------------------------------------------- */
 
-           .module { … }
+.module { … }
 
-           .module_list { … }
-           .touch .module_list { … }
-           .ie9 .module_list { … }
+.module_list { … }
+    .touch .module_list { … }
+    .ie9 .module_list { … }
 
-           /* /Module name */
-</code></pre>
+/* /Module name */</code></pre>
 
       <p>Такая организация стилей упрощает дальнейший рефакторинг кода и позволяет непосвященному разработчику быстро разобраться во всех стилях модуля и быстро приступить к работе с ним.</p>
 
@@ -108,26 +105,23 @@
       <p>Части модуля разделяются одинарным подчёркиванием: <strong>"_"</strong>, а модификаторы двойным: <strong>"__"</strong>:</p>
 
 <pre><code>/* Module name
-           -------------------------------------------------- */
+-------------------------------------------------- */
 
-           .module { … }
+.module { … }
 
-           .module_list { … }
-           .module_list__modificator { … }
+.module_list { … }
+    .module_list__modificator { … }
 
-           /* /Module name */
-</code></pre>
+/* /Module name */</code></pre>
 
       <p>Модификаторы могут использоваться в HTML только рядом с модифицируемым классом:</p>
 
-<pre><code>&lt;div class="module_list module_list__modificator"&gt;&lt;/div&gt;
-</code></pre>
+<pre><code>&lt;div class="module_list module_list__modificator"&gt;&lt;/div&gt;</code></pre>
 
       <p>Для определения названия из нескольких слов используется дефис <strong>"-"</strong>:</p>
 
 <pre><code>.big-module-name { … }
-           .big-module-name_block { … }
-</code></pre>
+.big-module-name_block { … }</code></pre>
 
       <h2>Фундамент</h2>
 
@@ -173,25 +167,21 @@
       <p>Cтандарт форм:</p>
 
 <pre><code>.input-field { … }
-           .input-field_text { … }
-</code></pre>
+.input-field_text { … }</code></pre>
 
       <p>Взаимодействия стандарта форм со стандартом кнопок - модифицирование каскадом от 1-го слоя:</p>
 
 <pre><code>.input-field { … }
-           .input-field .button { … }
-</code></pre>
+.input-field .button { … }</code></pre>
 
       <p>Взаимодействие проектного модуля со стандартом во 2-м слое:</p>
 
 <pre><code>.project-module { … }
-           .project-module .input-field { … }
-</code></pre>
+.project-module .input-field { … }</code></pre>
 
       <p><strong>Модификация 2-го слоя, от 1-го запрещена!</strong> В такой ситуации слои смешиваются, вызывая беспорядок:</p>
 
-<pre><code>    .input-field .project-module { … }
-</code></pre>
+<pre><code>    .input-field .project-module { … }</code></pre>
 
       <p>Стили подключаются сразу после фундамента, перед 2-м слоем, для поддержания низкого уровня приоритета по весу селекторов.</p>
 
@@ -233,27 +223,24 @@
       <p>В примере описан модуль второго слоя <strong>.toolbar</strong>, который использует стандарт первого слоя <strong>.umenu</strong>. Чтобы модифицировать стандарт под проектные нужды, используется каскад в CSS:</p>
 
 <pre><code>/* Toolbar
-           -------------------------------------------------- */
+-------------------------------------------------- */
 
-           .toolbar { … }
+.toolbar { … }
 
-           .toolbar_dropdown_ul { … }
-           .toolbar_dropdown_ul .umenu_li { … }
+.toolbar_dropdown_ul { … }
+    .toolbar_dropdown_ul .umenu_li { … }
 
-           /* /Toolbar */
-</code></pre>
+/* /Toolbar */</code></pre>
 
       <p><strong>Стили второго слоя могут быть модифицированы каскадом только от других модулей второго слоя.</strong></p>
 
       <p>Можно:</p>
 
-<pre><code>.project-module .other-project-module { … }
-</code></pre>
+<pre><code>.project-module .other-project-module { … }</code></pre>
 
       <p><strong>Нельзя:</strong></p>
 
-<pre><code>.standard-module .project-module { … }
-</code></pre>
+<pre><code>.standard-module .project-module { … }</code></pre>
 
       <h3>Преимущества</h3>
 
@@ -308,20 +295,19 @@
       <p>Слой контекста является исключением в правиле "Расположение стилей". Стили этого слоя располагаются по всем слоям, рядом с селекторами, которые каскадом модифицируются от контекста.</p>
 
 <pre><code>/* Module name
-           -------------------------------------------------- */
+-------------------------------------------------- */
 
-           .module { … }
+.module { … }
 
-           .module_list { … }
-           .touch .module_list { … }
-           .ie9 .module_list { … }
+.module_list { … }
+    .touch .module_list { … }
+    .ie9 .module_list { … }
 
-           @media screen and (max-width: 1000px) {
-           .module { … }
-           }
+    @media screen and (max-width: 1000px) {
+    .module { … }
+    }
 
-           /* /Module name */
-</code></pre>
+/* /Module name */</code></pre>
 
       <h2>Примеры использования</h2>
 
@@ -349,20 +335,19 @@
       <p>Что бы не раздувать названия классов, используется словарь популярных сокращений:</p>
 
 <pre><code>i — item
-           tx — text
-           it — input text
-           ico — icon
-           t — title
-           f — footer
-           h — header
-           col — column
-           cnt — content
-           img — image
-           a — link
-           ac — action
-           usr — user
-           e — error
-</code></pre>
+tx — text
+it — input text
+ico — icon
+t — title
+f — footer
+h — header
+col — column
+cnt — content
+img — image
+a — link
+ac — action
+usr — user
+e — error</code></pre>
 
       <p>В будущем будет доступен в более развёрнутом виде.</p>
 
