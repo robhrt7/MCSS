@@ -90,7 +90,7 @@
 
 Стили фундамента, как и все ресеты, подключаются с самого начала, либо в отдельном файле, либо в начале единого CSS файла.
 
-## Компановка модулей
+## Компоновка модулей
 
 ![image](http://operatino.github.com/MCSS/images/layers.jpg)
 
@@ -105,7 +105,7 @@
 
 Внедряя методологию **MCSS** в рабочий проект, первое, с чего стоит начинать, - создать базу переиспользуемых стандартов.
 
-Как часть первого слоя можно смело использовать такие популярные фреймворки, как [Bootstrap](http://twitter.github.com/bootstrap/), [960gs](http://960.gs/), [inuit.css](https://github.com/csswizardry/inuit.css) и пр.
+Как часть первого слоя можно смело использовать такие популярные фреймворки, как [Twitter Bootstrap](http://twitter.github.com/bootstrap/), [960gs](http://960.gs/), [inuit.css](https://github.com/csswizardry/inuit.css) и пр.
 
 ### Правила
 Основное правило первого слоя — абстрактность как в названиях, так и в разметке:
@@ -122,7 +122,7 @@ Cтандарт форм:
 	.input-field { … }
 		.input-field_text { … }
 
-Взаимодействия стандарта форм со стандартом кнопок - модифицирование каскадом от 1-ого слоя:
+Взаимодействия стандарта форм со стандартом кнопок - модифицирование каскадом от 1-го слоя:
 
 	.input-field { … }
 		.input-field .button { … }
@@ -132,7 +132,7 @@ Cтандарт форм:
 	.project-module { … }
 		.project-module .input-field { … }
 
-**Модификация 2-го слоя, от 1-ого запрещена!** В такой ситуации слои смешиваются, вызывая беспорядок:
+**Модификация 2-го слоя, от 1-го запрещена!** В такой ситуации слои смешиваются, вызывая беспорядок:
 
 		.input-field .project-module { … }
 
@@ -260,7 +260,7 @@ Cтандарт форм:
 ### Code style
 Вместе с методологией советуем использовать следующие полезные практики для улучшения своего кода:
 
-* [Google HTML/CSS style guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) - стайл гайд по оформлению HTML/CSS кода
+* [Google HTML/CSS style guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) - стайл-гайд по оформлению HTML и CSS кода
 * [CSScomb](http://csscomb.ru/) - инструмент для сортировки CSS-свойств в рамках селектора
 * [CSSDoc](http://cssdoc.net/) - правила оформления комментариев в CSS ([описание](http://habrahabr.ru/post/87406/))
 
