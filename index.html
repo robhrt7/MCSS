@@ -181,7 +181,7 @@
 
       <p><strong>Модификация 2-го слоя, от 1-го запрещена!</strong> В такой ситуации слои смешиваются, вызывая беспорядок:</p>
 
-<pre><code>    .input-field .project-module { … }</code></pre>
+<pre><code>.input-field .project-module { … }</code></pre>
 
       <p>Стили подключаются сразу после фундамента, перед 2-м слоем, для поддержания низкого уровня приоритета по весу селекторов.</p>
 
@@ -212,13 +212,12 @@
       <p>Чтобы в проектном модуле использовать конструкцию из первого слоя, нужно просто добавить рядом CSS-класс:</p>
 
 <pre><code>&lt;header class="toolbar"&gt;
-           &lt;a href="/" class="toolbar_logo"&gt;&lt;/a&gt;
-           &lt;menu class="toolbar_dropdown_ul umenu"&gt;
-           &lt;li class="umenu_li"&gt;&lt;/li&gt;
-           &lt;li class="umenu_li"&gt;&lt;/li&gt;
-           &lt;/menu&gt;
-           &lt;/header&gt;
-</code></pre>
+    &lt;a href="/" class="toolbar_logo"&gt;&lt;/a&gt;
+    &lt;menu class="toolbar_dropdown_ul umenu"&gt;
+        &lt;li class="umenu_li"&gt;&lt;/li&gt;
+        &lt;li class="umenu_li"&gt;&lt;/li&gt;
+    &lt;/menu&gt;
+&lt;/header&gt;</code></pre>
 
       <p>В примере описан модуль второго слоя <strong>.toolbar</strong>, который использует стандарт первого слоя <strong>.umenu</strong>. Чтобы модифицировать стандарт под проектные нужды, используется каскад в CSS:</p>
 
@@ -304,8 +303,8 @@
     .ie9 .module_list { … }
 
     @media screen and (max-width: 1000px) {
-    .module { … }
-    }
+        .module { … }
+        }
 
 /* /Module name */</code></pre>
 
