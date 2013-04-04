@@ -14,11 +14,11 @@
         margin: 10px;
         }
 
-    .pres-descr {
+    .pres-sections_descr {
         font-size: 15px;
         }
 
-    .pres-descr_lp {
+    .lp { /* low priority */
         font-size: .9em;
         color: #999;
         }
@@ -27,7 +27,7 @@
 <section class="pres-section">
     <h2 class="pres-section_header">Base from Bootstrap</h2>
 
-    <p class="pres-descr">.row, .span8, .alert, .btn</p>
+    <p class="pres-sections_descr">.row, .span8, .alert, .btn</p>
 
     <div class="row">
         <form class="span8">
@@ -58,7 +58,7 @@
 <section class="pres-section">
     <h2 class="pres-section_header">Project</h2>
 
-    <p class="pres-descr">+ .login, .login_row, .login_info, .login_error, .login_label, .login_submit, .login_submit, .login_additional-b</p>
+    <p class="pres-sections_descr">+ .login, .login_row, .login_info, .login_error, .login_label, .login_submit, .login_submit, .login_additional-b</p>
 
     <div class="row">
         <form class="login span8">
@@ -95,7 +95,7 @@
 <section class="pres-section">
     <h2 class="pres-section_header">All layers together</h2>
 
-    <p class="pres-descr">+ .al <span class="pres-descr_lp">(Action Link)</span></p>
+    <p class="pres-sections_descr">+ .al <span class="lp">(Action Link)</span></p>
 
     <div class="row">
         <form class="login span8">
@@ -128,40 +128,3 @@
         </form>
     </div>
 </section>
-
-<script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-    try {
-        var pageTracker = _gat._getTracker("UA-31907551-2");
-        pageTracker._trackPageview();
-    } catch(err) {}
-</script>
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter18211534 = new Ya.Metrika({id:18211534,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="//mc.yandex.ru/watch/18211534" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->

@@ -15,7 +15,7 @@ a {color:#666;text-decoration:none}
 
 
 
-/* Base
+/* Base - 1 layer
 ---------------------------------------------------------------------------------- */
 
 /* Forms
@@ -112,7 +112,6 @@ a {color:#666;text-decoration:none}
     background-image: -moz-linear-gradient(top, #78d81f, #1daa09); /* FF3.6 */
     background-image: -ms-linear-gradient(top, #78d81f, #1daa09); /* IE10 */
     background-image: -o-linear-gradient(top, #78d81f, #1daa09); /* Opera 11.10+ */
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#78d81f), to(#1daa09)); /* Saf4+, Chrome */
     background-image: -webkit-linear-gradient(top, #78d81f, #1daa09); /* Chrome 10+, Saf5.1+ */
     background-image: linear-gradient(top, #78d81f, #1daa09);
     }
@@ -125,7 +124,6 @@ a {color:#666;text-decoration:none}
         background-image: -moz-linear-gradient(top, #70ca1b, #169305);
         background-image: -ms-linear-gradient(top, #70ca1b, #169305);
         background-image: -o-linear-gradient(top, #70ca1b, #169305);
-        background-image: -webkit-gradient(linear, left top, left bottom, from(#70ca1b), to(#169305));
         background-image: -webkit-linear-gradient(top, #70ca1b, #169305);
         background-image: linear-gradient(top, #70ca1b, #169305);
         text-decoration: none;
@@ -173,12 +171,12 @@ a {color:#666;text-decoration:none}
 .ic10_close:hover {background-position: 0 100%;}
 /* /Icons */
 
-/* /Base
+/* /Base - 1 layer
 ---------------------------------------------------------------------------------- */
 
 
 
-/* Project
+/* Project - 2 layer
 ---------------------------------------------------------------------------------- */
 
 /* Login
@@ -221,12 +219,12 @@ a {color:#666;text-decoration:none}
 
 /* /Login */
 
-/* /Project
+/* /Project - 2 layer
 ---------------------------------------------------------------------------------- */
 
 
 
-/* Cosmetic
+/* Cosmetic - 3 layer
 ---------------------------------------------------------------------------------- */
 
 /* Links
@@ -249,5 +247,5 @@ a {color:#666;text-decoration:none}
 
 /* /Links */
 
-/* /Cosmetic
+/* /Cosmetic - 3 layer
 ---------------------------------------------------------------------------------- */
