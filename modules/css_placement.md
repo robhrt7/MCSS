@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Расположение стилей - MCSS
-description: Расположение стилей. Многослойная система организации CSS
+title: Расположение стилей
+description: Модуль MCSS
 project-name: MCSS
 project-url: https://github.com/operatino/MCSS
 pages-url: /MCSS
@@ -10,6 +10,8 @@ author: <a href="https://github.com/operatino">operatino</a>
 res-watch-on-github: Посмотреть на Github
 res-download-archive: Скачать в архиве
 ---
+
+[На главную]({{ page.pages-url }})
 
 # Расположение стилей
 Стили каждого модуля должны храниться рядом друг с другом, можно их выделять как в закомментированные секции, так и в отдельные файлы:

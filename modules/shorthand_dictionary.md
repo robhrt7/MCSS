@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Словарь сокращений - MCSS
-description: Словарь сокращений. Многослойная система организации CSS
+title: Словарь сокращений
+description: Модуль MCSS
 project-name: MCSS
 project-url: https://github.com/operatino/MCSS
 pages-url: /MCSS
@@ -10,6 +10,8 @@ author: <a href="https://github.com/operatino">operatino</a>
 res-watch-on-github: Посмотреть на Github
 res-download-archive: Скачать в архиве
 ---
+
+[На главную]({{ page.pages-url }})
 
 # Словарь сокращений
 

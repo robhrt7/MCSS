@@ -150,12 +150,10 @@ res-download-archive: Скачать в архиве
 {% highlight css %}
 /* Toolbar
 -------------------------------------------------- */
-
 .toolbar { }
 
 .toolbar_dropdown_ul { }
     .toolbar_dropdown_ul .umenu_li { }
-
 /* /Toolbar */
 {% endhighlight %}
 
