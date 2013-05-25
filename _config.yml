@@ -1,0 +1,4 @@
+baseurl: /MCSS
+pygments: true
+markdown: redcarpet
+safe: true
