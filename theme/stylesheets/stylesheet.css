@@ -633,6 +633,19 @@ a {
 /* /Small screen helpers */
 
 
+/* Disqus
+-------------------------------------------------- */
+
+#disqus_thread {
+	margin-top: 15px;
+	margin-bottom: 20px;
+	border-top: solid 1px #ddd;
+	padding-top: 25px;
+	}
+
+/* /Disqus */
+
+
 /* /Project
 ---------------------------------------------------------------------------------- */
 
