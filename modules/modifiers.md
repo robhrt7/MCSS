@@ -1,19 +1,9 @@
 ---
 layout: default
 title: Модификаторы
-description: Модуль MCSS
-project-name: MCSS
-project-url: https://github.com/operatino/MCSS
-pages-url: /MCSS
-author: <a href="https://github.com/operatino">operatino</a>
 
-res-watch-on-github: Посмотреть на Github
-res-download-archive: Скачать в архиве
+context: inner-page
 ---
-
-[На главную]({{ page.pages-url }})
-
-# Модификаторы
 
 Модификаторы имеют большую роль в общем своде правил MCSS, но так же применимы и к другим методологиям, из за чего вынесены в отдельный независимый модуль документации.
 
@@ -33,7 +23,7 @@ res-download-archive: Скачать в архиве
 
 Что бы наглядно отделить модификатор от других элементов, используется особое правило именования, определяющее специальный разделитель, используемый только в названиях модификаторов — **"__"** (двойное подчеркивание).
 
-Подробней почитать о правилах именования и о ключевом слове можно в отдельном модуле [отдельном модуле]({{ page.pages-url }}/modules/naming.html).
+Подробней почитать о правилах именования и о ключевом слове можно в отдельном модуле [отдельном модуле]({{ site.baseurl }}/modules/naming.html).
 
 ## В CSS/HTML
 
@@ -114,4 +104,4 @@ res-download-archive: Скачать в архиве
     .block.__modifier .block_sub-element {}
 {% endhighlight %}
 
-Общие правило расположение стилей описано в [отдельном модуле]({{ page.pages-url }}/modules/css_placement.html).
+Общие правило расположение стилей описано в [отдельном модуле]({{ site.baseurl }}/modules/css_placement.html).

@@ -1,19 +1,10 @@
 ---
 layout: default
 title: Расположение стилей
-description: Модуль MCSS
-project-name: MCSS
-project-url: https://github.com/operatino/MCSS
-pages-url: /MCSS
-author: <a href="https://github.com/operatino">operatino</a>
 
-res-watch-on-github: Посмотреть на Github
-res-download-archive: Скачать в архиве
+context: inner-page
 ---
 
-[На главную]({{ page.pages-url }})
-
-# Расположение стилей
 Стили каждого модуля должны храниться рядом друг с другом, можно их выделять как в закомментированные секции, так и в отдельные файлы:
 
 {% highlight css %}
@@ -55,4 +46,4 @@ res-download-archive: Скачать в архиве
 
 При чистке кода просто избавляться от старых модулей и от всех его зависимостей.
 
-Про расположение стилей внутри секций можно почитать в модуле про [модификаторы]({{ page.pages-url }}/modules/modifiers.html).
+Про расположение стилей внутри секций можно почитать в модуле про [модификаторы]({{ site.baseurl }}/modules/modifiers.html).

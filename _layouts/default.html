@@ -1,46 +1,98 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="{{ page.title }} : {{ page.description }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/stylesheets/stylesheet.css">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/theme/stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/theme/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/theme/stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
     <title>{{ page.title }}</title>
   </head>
 
-  <body>
+  <body {% if page.context %}class="{{ page.context }}"{% endif %}>
+    <header class="header">
+        <div class="content-wrap">
+            <h1 class="header_t">{{ page.title }}</h1>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-      <header class="inner">
-          <a id="forkme_banner" href="{{ page.project-url }}">{{ page.res-watch-on-github }}</a>
+            {% if page.description %}
+            <h2 class="header_sub-t">{{ page.description }}</h2>
+            {% endif %}
 
-          <h1 id="project_title">{{ page.title }}</h1>
-          <h2 id="project_tagline">{{ page.description }}</h2>
+            <a href="{{ site.project-url }}" class="watch-on-github"><small class="watch-on-github_text">{{ site.res-watch-on-github }}</small> GitHub</a>
+        </div>
+    </header>
 
-          <section id="downloads">
-              <a class="zip_download_link" href="{{ page.project-url }}/zipball/gh-pages" title="{{ page.res-download-archive }} .zip">{{ page.res-download-archive }} .zip</a>
-              <a class="tar_download_link" href="{{ page.project-url }}/tarball/gh-pages" title="{{ page.res-download-archive }} tar.gz">{{ page.res-download-archive }} tar.gz</a>
-          </section>
-      </header>
-    </div>
+    <div class="main">
+        <div class="content-wrap clearfix">
+            <div class="helpers_go-to-nav">
+                <a href="#sidebar">Перейти к навигации</a>
+            </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-            {{ content }}
-      </section>
-    </div>
+            <section class="content" id="content">
+                {{ content }}
+            </section>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-        <footer class="inner">
-            <p class="copyright">{{ page.project-name }} maintained by {{ page.author }}</p>
-            <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-        </footer>
+            <aside class="sidebar" id="sidebar">
+                <nav class="navigation">
+
+                    <div class="navigation_t">
+                        {{ site.res-navigation }}
+                    </div>
+
+                    <ul class="navigation_ul">
+                        <li class="navigation_i __link-to-main"><a href="{{ site.baseurl }}">На главную</a></li>
+                        <li class="navigation_i helpers_go-to-content"><a href="#content">Перейти к контенту</a></li>
+                        <li class="navigation_i"><a href="{{ site.project-url }}">О проекте</a></li>
+                    </ul>
+
+                    <div class="navigation_t">
+                        {{ site.res-navigation-modules }}
+                    </div>
+
+                    <ul class="navigation_ul">
+                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/README.html">О модулях</a></li>
+                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/css_placement.html">Расположение стилей</a></li>
+                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/modifiers.html">Модификаторы</a></li>
+                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/naming.html">Именование</a></li>
+                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/shorthand_dictionary.html">Словарь сокращений</a></li>
+                    </ul>
+
+                    <div class="navigation_t">
+                        {{ site.res-navigation-links }}
+                    </div>
+
+                    <ul class="navigation_ul">
+                        <li class="link-to-main navigation_i"><a href="http://tohtml.it/post/43785238499/css">Видео запись презентации о MCSS</a></li>
+                        <li class="link-to-main navigation_i"><a href="http://tohtml.it/post/34285787881/mcss-unstrict-mode">Модель строгости в MCSS</a></li>
+                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/en">Early alpha version of english translation</a></li>
+                    </ul>
+
+                </nav>
+
+                <div class="repo-owner">
+                    <div class="repo-owner_t">{{ site.res-author }}</div>
+                    <div class="repo-owner_n">
+                        {{ site.project-author }}
+                    </div>
+                    <div class="repo-owner_links">{{ site.project-author-twitter }}</div>
+                </div>
+            </aside>
+
+            <footer class="footer">
+                <p>{{ site.res-footer }}.</p>
+            </footer>
+        </div>
     </div>
 
     <script type="text/javascript">
@@ -79,6 +131,8 @@
     </script>
     <noscript><div><img src="//mc.yandex.ru/watch/18211534" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+
+    <!-- Based on GitHub Pages Architect template by <a href="http://twitter.com/jasonlong">Jason Long</a> -->
 
   </body>
 </html>

@@ -1,0 +1,654 @@
+/*
+
+ Design Based on GitHub Pages Architect template by <a href="http://twitter.com/jasonlong">Jason Long</a>
+
+ and modified by Robert Haritonov http://rhr.me according to MCSS methodology http://rhr.me/MCSS and project needs
+
+ */
+
+/* Reset
+---------------------------------------------------------------------------------- */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+
+body {
+	line-height: 1;
+	}
+
+ol, ul {
+	list-style: none;
+	}
+
+blockquote, q {
+	quotes: none;
+	}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+
+/* /Reset
+---------------------------------------------------------------------------------- */
+
+/* Base
+---------------------------------------------------------------------------------- */
+
+body {
+	background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
+
+	font-family: 'Helvetica Neue', Helvetica, Arial, serif;
+	font-weight: 400;
+	line-height: 1.5;
+	font-size: 15px;
+	color: #666;
+	}
+
+a {
+	text-decoration: none;
+	color: #2879d0;
+	}
+
+	a:hover {
+		color: #2268b2;
+		}
+
+/* Layout
+-------------------------------------------------- */
+
+.content-wrap {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+	}
+
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.content-wrap {
+			width: 740px;
+			}
+		}
+
+	@media only screen and (max-width: 767px) {
+		.content-wrap {
+			width: 93%;
+			}
+		}
+
+/* /Layout */
+
+/* Header
+-------------------------------------------------- */
+.header {
+	padding-top: 40px;
+	padding-bottom: 35px;
+
+	background-color: #1F65B4;
+	background-size: 80px 80px, 80px 80px, 10px 10px, 10px 10px;
+	background-position: 10px 10px;
+
+	/* Old syntax fallback */
+	background-image:
+		-webkit-linear-gradient(rgba(66, 153, 255, 0.1) 1px, transparent 1px),
+		-webkit-linear-gradient(0, rgba(190, 220, 255, .1) 1px, transparent 1px),
+		-webkit-linear-gradient(rgba(61, 136, 223, .1) 1px, transparent 1px),
+		-webkit-linear-gradient(0, rgba(63, 135, 217, .1) 1px, transparent 1px);
+
+	background-image:
+		linear-gradient(to left, rgba(66, 153, 255, 0.1) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(190, 220, 255, .1) 1px, transparent 1px),
+		linear-gradient(to left, rgba(61, 136, 223, .1) 1px, transparent 1px),
+		linear-gradient(to bottom, rgba(63, 135, 217, .1) 1px, transparent 1px);
+
+	border-bottom: solid 1px #275da1;
+	}
+
+	.header_t {
+		letter-spacing: -1px;
+		font-size: 72px;
+		color: #fff;
+		line-height: 1;
+		margin-bottom: 0.2em;
+		width: 540px;
+		}
+
+	.header_sub-t {
+		font-size: 26px;
+		color: #fff;
+		font-weight: normal;
+		line-height: 1.3;
+		width: 540px;
+		letter-spacing: 0;
+		}
+
+	.header .watch-on-github {
+		position: absolute;
+		right: 0;
+		top: 0;
+		}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		.header_t,
+		.header_sub-t {
+			width: 340px;
+			}
+
+		.header_t {
+			font-size: 60px;
+			}
+
+		.header_sub-t {
+			font-size: 30px;
+			}
+		}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		.header {
+			padding: 20px 0;
+			}
+
+			.header_t,
+			.header_sub-t {
+				width: 100%;
+				}
+
+			.header_t {
+				font-size: 48px;
+				}
+
+			.header_sub-t {
+				font-size: 24px;
+				}
+
+			.header .watch-on-github {
+				position: relative;
+				}
+		}
+/* /Header */
+
+/* Main
+-------------------------------------------------- */
+
+.main {
+	border-top: solid 1px #fff;
+	padding-top: 30px;
+	}
+
+/* /Main */
+
+
+
+/* Content
+-------------------------------------------------- */
+
+.content {
+	width: 690px;
+	float: left;
+	}
+
+	/* General styles for content */
+
+	.content img {
+		max-width: 100%;
+		}
+
+	.content h1 {
+
+		font-size: 2.8em;
+		letter-spacing: -1px;
+		color: #474747;
+		}
+
+	.content h2 {
+
+		font-size: 22px;
+		font-weight: bold;
+		margin-bottom: 8px;
+		color: #474747;
+		}
+
+		.content h2:before {
+			content: "//";
+			position: absolute;
+			margin-left: -1em;
+			padding-right: 0.3em;
+			color: #9ddcff;
+			}
+
+	.content h3 {
+
+		font-size: 18px;
+		font-weight: bold;
+		margin-top: 24px;
+		margin-bottom: 8px;
+		color: #474747;
+		}
+
+		.content h3:before {
+			content: "///";
+			position: absolute;
+			margin-left: -1.5em;
+			padding-right: 0.3em;
+			color: #9DDCFF;
+			}
+
+	.content h4 {
+
+		font-size: 15px;
+		font-weight: bold;
+		color: #474747;
+		}
+
+		.content h4:before {
+			content: "////";
+			position: absolute;
+			margin-left: -2em;
+			padding-right: 0.3em;
+			color: #9ddcff;
+			}
+
+	.content h5 {
+
+		font-size: 15px;
+		color: #474747;
+		}
+
+		.content h5:before {
+			content: "/////";
+			position: absolute;
+			margin-left: -2.2em;
+			padding-right: 0.3em;
+			color: #9ddcff;
+			}
+
+	.content h6 {
+
+		font-size: 15px;
+		color: #474747;
+		}
+
+		.content h6:before {
+			content: "//////";
+			position: absolute;
+			margin-left: -2.5em;
+			padding-right: 0.3em;
+			color: #9ddcff;
+			}
+
+	.content p {
+		margin-bottom: 20px;
+		}
+
+	.content blockquote {
+		font-size: 1.6em;
+		border-left: 10px solid #e9e9e9;
+		margin-bottom: 20px;
+		padding: 0 0 0 30px;
+		}
+
+	.content i,
+	.content em {
+		font-style: italic;
+		}
+
+	.content b,
+	.content strong {
+		font-weight: 700;
+		}
+
+	.content ul li {
+		list-style: disc inside;
+		padding-left: 20px;
+		}
+
+	.content ol li {
+		list-style: decimal inside;
+		padding-left: 3px;
+		}
+
+	.content dl dd {
+		font-style: italic;
+		font-weight: 100;
+		}
+
+	.content hr {
+		height: 1px;
+		line-height: 1px;
+		margin-top: 1em;
+		padding-bottom: 1em;
+		border-top: solid 1px #ddd;
+		}
+
+	.content table {
+		width: 100%;
+		border: 1px solid #ebebeb;
+		}
+
+	.content th {
+		font-weight: 500;
+		}
+
+	.content td {
+		border: 1px solid #ebebeb;
+		text-align: center;
+		font-weight: 300;
+		}
+
+	.content code,
+	.content pre {
+		font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+		color: #222;
+		margin-bottom: 30px;
+		font-size: 13px;
+		}
+
+	.content code {
+		background-color: #f2f8fc;
+		border: solid 1px #dbe7f3;
+		padding: 0 3px;
+		}
+
+	.content pre {
+		padding: 20px;
+		background: #fff;
+		text-shadow: none;
+		overflow: auto;
+		border: solid 1px #f2f2f2;
+		}
+
+		.content pre code {
+			color: #2879d0;
+			background-color: #fff;
+			border: none;
+			padding: 0;
+			}
+
+	.content ul,
+	.content ol,
+	.content dl {
+		margin-bottom: 20px;
+		}
+
+	/* /General styles for content */
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.content {
+		width: 490px;
+		}
+		.content h1:before,
+		.content h2:before,
+		.content h3:before,
+		.content h4:before,
+		.content h5:before,
+		.content h6:before {
+			content: none;
+			padding-right: 0;
+			margin-left: 0;
+			}
+	}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.content {
+		float: none;
+		width: 100%;
+		}
+
+		.content h1:before,
+		.content h2:before,
+		.content h3:before,
+		.content h4:before,
+		.content h5:before,
+		.content h6:before {
+			content: none;
+			padding-right: 0;
+			margin-left: 0;
+			}
+	}
+/* /Content */
+
+/* Sidebar
+-------------------------------------------------- */
+
+.sidebar {
+	width: 200px;
+	padding-left: 20px;
+	min-height: 504px;
+	float: right;
+	background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
+	}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.sidebar {
+		float: none;
+		width: 100%;
+		background-image: none;
+		margin-top: 20px;
+		border-top: solid 1px #ddd;
+		padding: 20px 0;
+		min-height: 0;
+		}
+	}
+
+/* /Sidebar */
+
+/* Watch on github
+-------------------------------------------------- */
+.watch-on-github {
+	width: 134px;
+	height: 58px;
+	padding-left: 68px;
+	padding-top: 22px;
+	background: url(../images/github-button.png) no-repeat;
+
+	line-height: 1.2;
+	font-size: 23px;
+	color: #fff;
+	text-decoration: none;
+	}
+
+	.watch-on-github:hover {
+		color: #fff;
+		text-decoration: underline;
+		}
+
+.watch-on-github_text {
+	display: block;
+	font-size: 11px;
+	}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.watch-on-github {
+		position: relative;
+
+		width: auto;
+		height: auto;
+		display: inline-block;
+		margin-top: 15px;
+		background-image: none;
+		background-color: #9ddcff;
+
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+
+		padding: 5px 10px;
+		text-align: center;
+		font-size: 13px;
+		line-height: 1;
+		color: #2879d0;
+		}
+		.watch-on-github:hover {
+			color: #2268B2;
+			}
+
+	.watch-on-github_text {
+		display: inline;
+		font-size: 13px;
+		}
+	}
+/* /Watch on github */
+
+/* Footer
+-------------------------------------------------- */
+
+.footer {
+	clear: both;
+	border-top: solid 1px #ddd;
+	margin-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	font-size: 13px;
+	color: #aaa;
+	}
+
+	.footer a {
+		color: #666;
+		}
+
+	.footer a:hover {
+		color: #444;
+		}
+
+/* /Footer */
+
+/* /Base
+---------------------------------------------------------------------------------- */
+
+/* Project
+---------------------------------------------------------------------------------- */
+
+/* Repository owner
+-------------------------------------------------- */
+
+.repo-owner {
+	font-weight: 400;
+	}
+
+.repo-owner_t {
+	font-size: 13px;
+	}
+
+.repo-owner_n {
+	display: inline-block;
+	}
+
+.repo-owner_links {
+	display: inline-block;
+
+	font-size: 13px;
+	}
+
+/* /Repository owner */
+
+/* Navigation
+-------------------------------------------------- */
+
+.navigation {
+	margin-bottom: 30px;
+	}
+
+.navigation_t {
+	margin-bottom: 5px;
+	font-weight: 700;
+	}
+
+.navigation_ul {
+	margin-bottom: 15px;
+	}
+
+.navigation_i {
+	margin-bottom: 5px;;
+	margin-left: 10px;
+	font-size: 13px;
+	}
+
+.navigation_i.__link-to-main {
+	display: none;
+	}
+
+	.inner-page .navigation_i.__link-to-main { /* Context */
+		display: block;
+		}
+
+/* /Navigation */
+
+/* Small screen helpers
+-------------------------------------------------- */
+
+.helpers_go-to-content,
+.helpers_go-to-nav {
+	display: none;
+	}
+
+@media only screen and (max-width: 767px) {
+	.helpers_go-to-nav {
+		display: block;
+		margin-bottom: 10px;
+		}
+
+	.helpers_go-to-content {
+		display: block;
+		}
+	}
+
+/* /Small screen helpers */
+
+
+/* /Project
+---------------------------------------------------------------------------------- */
+
+/* Cosmetic
+---------------------------------------------------------------------------------- */
+
+.clearfix {
+	display: block;
+	}
+	.clearfix:after {
+		clear: both;
+		content: '.';
+		display: block;
+		visibility: hidden;
+		height: 0;
+		}
+
+/* /Cosmetic
+---------------------------------------------------------------------------------- */

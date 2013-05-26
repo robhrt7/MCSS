@@ -2,18 +2,13 @@
 layout: default
 title: MCSS
 description: Multilayer CSS
-project-name: MCSS
-project-url: https://github.com/operatino/MCSS
-pages-url: /MCSS
-author: <a href="https://github.com/operatino">operatino</a>
 
-res-watch-on-github: View on Github
-res-download-archive: Download archive in
+context: inner-page
 ---
 
 # Multilayer CSS
 
-[Оригинальная, русская версия документации]({{ page.pages-url }}/)
+[Оригинальная, русская версия документации]({{ site.baseurl }}/)
 
 ## Introduction
 Multilayer CSS organization methodology is based on BEM and OOCSS principles. It was born in Odnoklassniki.ru developers team and is recommended for other developers as core for own documentations and team based methologies.
@@ -29,7 +24,7 @@ Pages are built from modules, every module must stay independend from parent con
 
 Modules are seperated to layers, with own rules of interaction.
 
-![image]({{ page.pages-url }}/images/modules.jpg)
+![image]({{ site.baseurl }}/images/modules.jpg)
 
 MCSS doesn't force using spefic code styles, you hust need to remember core methology rules.
 
@@ -78,7 +73,7 @@ Foundation styles, as all resets, is applied first, or in separate file, or at t
 
 ## Module interaction scheme
 
-![image]({{ page.pages-url }}/images/layers.jpg)
+![image]({{ site.baseurl }}/images/layers.jpg)
 
 ## 1 layer — base
 First layer - is a portal framework, the core part of interface. It is based on reusable and abstract constructions:
@@ -203,11 +198,11 @@ This layer include styles of high context and @media-rules, that can be used for
 {% endhighlight %}
 
 ## Real life examples
-You can check MCSS in action at this [demo]({{ page.pages-url }}/examples/layers/), all layers are stored in one [CSS file]({{ page.pages-url }}/examples/layers/css/style.css), but could be also separated to individual files, like so:
+You can check MCSS in action at this [demo]({{ site.baseurl }}/examples/layers/), all layers are stored in one [CSS file]({{ site.baseurl }}/examples/layers/css/style.css), but could be also separated to individual files, like so:
 
-![image]({{ page.pages-url }}/images/file-system.png)
+![image]({{ site.baseurl }}/images/file-system.png)
 
-In second [demo]({{ page.pages-url }}/examples/mcss_with_bootstrap/), we have shown how MCSS works with Bootstrap, as first layer base.
+In second [demo]({{ site.baseurl }}/examples/mcss_with_bootstrap/), we have shown how MCSS works with Bootstrap, as first layer base.
 
 ### Abbreviation dictionary
 To escape large CSS selector names, we suggest using abbreviation dictionary:

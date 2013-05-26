@@ -2,3 +2,19 @@ baseurl: /MCSS
 pygments: true
 markdown: redcarpet
 safe: true
+
+project-name: MCSS
+project-url: http://github.com/operatino/MCSS
+
+project-author: <a href="http://rhr.me">Роберт Харитонов</a>
+project-author-twitter: <a href="http://twitter.com/operatino">@operatino</a>
+
+
+res-watch-on-github: Посмотреть проект на
+res-download-archive: Скачать в архиве
+res-footer: Сайт опубликован с помощью <a href="http://pages.github.com">GitHub Pages</a> на основе <a href="http://jekyllrb.com">Jekyll</a>
+res-author: Автор проекта
+
+res-navigation: Навигация
+res-navigation-modules: Модули документации
+res-navigation-links: Ссылки

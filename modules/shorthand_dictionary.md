@@ -1,19 +1,9 @@
 ---
 layout: default
 title: Словарь сокращений
-description: Модуль MCSS
-project-name: MCSS
-project-url: https://github.com/operatino/MCSS
-pages-url: /MCSS
-author: <a href="https://github.com/operatino">operatino</a>
 
-res-watch-on-github: Посмотреть на Github
-res-download-archive: Скачать в архиве
+context: inner-page
 ---
-
-[На главную]({{ page.pages-url }})
-
-# Словарь сокращений
 
 Что бы не раздувать названия классов, советуется использовать сокращения для самых популярных слов. Если вся команда придерживается одного словаря сокращений, название классов и других элементов остаются читабельными и легко воспринимаемыми.
 
