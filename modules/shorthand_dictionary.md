@@ -31,10 +31,11 @@ context: inner-page
     dyn - dynamic
 
     e - error
+    ext - external
 
     f - footer
-    fr- friend
-    ft- font
+    fr - friend
+    ft - font
 
     gen - general
 
@@ -45,6 +46,7 @@ context: inner-page
 
     i - item
     ic - icon
+    idx - index
     img - image
     ir - input radio
     is - input submit
@@ -65,7 +67,7 @@ context: inner-page
     opt - options
     ovr - overlay
 
-    pht - photo
+    ph - photo
     priv - privacy
 
     r - right
@@ -73,8 +75,9 @@ context: inner-page
 
     scr - screen | scroll
     sel - select
-    sett - settings
+    set - settings
     sm - small
+    spp - supplement
     spr - sprite
 
     t - title | t
