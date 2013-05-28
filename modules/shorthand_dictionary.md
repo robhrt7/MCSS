@@ -16,10 +16,12 @@ context: inner-page
     aux - auxillary
 
     b - body | bottom
+    bg - background
+    brd - border
 
     cat - catalog | category
     cl - clear
-    cnt - content | counter
+    cnt - content | container
     cnts - contents
     col - column
 
@@ -31,10 +33,12 @@ context: inner-page
     dyn - dynamic
 
     e - error
+    el - element
+    ext - external
 
     f - footer
-    fr- friend
-    ft- font
+    fr - friend
+    ft - font
 
     gen - general
 
@@ -58,6 +62,8 @@ context: inner-page
     lr - layer
     lst - list
 
+    mod - module | modifier
+
     n - name
     ntf - notification
     num - number
@@ -65,6 +71,7 @@ context: inner-page
     opt - options
     ovr - overlay
 
+    ph - placeholder
     pht - photo
     priv - privacy
 
