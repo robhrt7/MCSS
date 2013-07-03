@@ -349,10 +349,10 @@ a {
 
 	.content hr {
 		height: 1px;
+		background: #ddd;
 		line-height: 1px;
-		margin-top: 1em;
-		padding-bottom: 1em;
-		border-top: solid 1px #ddd;
+		margin: 1em 0;
+		border: 0 none;
 		}
 
 	.content table {

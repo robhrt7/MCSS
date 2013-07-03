@@ -1,7 +1,7 @@
 ---
 layout: default
 title: CSS-o-Gram (CSSG)
-description: аккуратно, наглядно, быстро - как [SSG](http://en.wikipedia.org/wiki/Steyr_SSG_69), только мирно
+description: аккуратно, наглядно, быстро - как SSG, только мирно
 
 context: inner-page
 ---
