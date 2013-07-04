@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: cssg-inner
 title: CSS-o-Gram
 description: аккуратно, наглядно, быстро - как SSG, только мирно
 

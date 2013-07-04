@@ -1,6 +1,6 @@
 ---
 layout: cssg-inner
-title: CSSG
+title: CSS-o-Gram
 description: Начало работы
 
 context: cssg
