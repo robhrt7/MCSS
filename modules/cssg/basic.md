@@ -1,8 +1,9 @@
 ---
-layout: default
-title: CSSG - Начало работы
+layout: cssg-inner
+title: CSSG
+description: Начало работы
 
-context: inner-page
+context: cssg
 ---
 
 CSSG описывает конструкцию сущности привычным каскадом CSS классов.  

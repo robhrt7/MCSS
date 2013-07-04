@@ -322,6 +322,18 @@ a {
 		padding: 0 0 0 30px;
 		}
 
+		.cssg blockquote {
+			padding: 4px 0 4px 15px;
+			background: #f6f6f6;
+			color: #888;
+			font-size: .8em;
+			line-height: 1.8;
+		}
+
+			.cssg blockquote p {
+				margin: 0;
+			}
+
 	.content i,
 	.content em {
 		font-style: italic;
@@ -595,10 +607,18 @@ a {
 	margin-bottom: 15px;
 	}
 
+	.navigation_ul .navigation_ul {
+		margin-top: 5px;
+		}
+
 .navigation_i {
 	margin-bottom: 5px;;
 	margin-left: 10px;
 	font-size: 13px;
+	}
+
+	.navigation_i .navigation_i {
+		margin-left: 15px;
 	}
 
 .navigation_i.__link-to-main {

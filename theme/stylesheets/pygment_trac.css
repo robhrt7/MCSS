@@ -67,3 +67,7 @@
 .type-csharp .highlight .nn { color: #000000 }
 .type-csharp .highlight .s { color: #A31515 }
 .type-csharp .highlight .sc { color: #A31515 }
+
+/* CSSG context */
+.cssg .highlight .c { color: #2879d0; font-style: normal; }
+.cssg .highlight .err { background: none; color: #000080; font-weight: normal; }

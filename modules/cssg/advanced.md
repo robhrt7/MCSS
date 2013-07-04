@@ -1,8 +1,9 @@
 ---
-layout: default
-title: CSSG - Копаем глубже
+layout: cssg-inner
+title: CSSG
+description: Копаем глубже
 
-context: inner-page
+context: cssg
 ---
 
 ## Множества
