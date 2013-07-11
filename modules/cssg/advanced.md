@@ -4,12 +4,6 @@ title: CSS-o-Gram
 description: Копаем глубже
 
 context: cssg
-cssg-sub-menu: |
-    <ul class="navigation_ul">
-        <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/basic.html">Первая часть</a></li>
-        <li class="navigation_i __current">Вторая часть</li>
-        <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/legend.html">Синтаксис</a></li>
-    </ul>
 ---
 
 ## Множества

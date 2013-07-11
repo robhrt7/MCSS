@@ -322,18 +322,6 @@ a {
 		padding: 0 0 0 30px;
 		}
 
-		.cssg blockquote {
-			padding: 4px 0 4px 15px;
-			background: #f6f6f6;
-			color: #888;
-			font-size: .8em;
-			line-height: 1.8;
-		}
-
-			.cssg blockquote p {
-				margin: 0;
-			}
-
 	.content i,
 	.content em {
 		font-style: italic;
@@ -665,6 +653,33 @@ a {
 	}
 
 /* /Disqus */
+
+/* CSSG
+-------------------------------------------------- */
+
+/* .cssg - context class on body */
+
+.cssg blockquote {
+	padding: 4px 0 4px 15px;
+	background: #f6f6f6;
+	color: #888;
+	font-size: .8em;
+	line-height: 1.8;
+	}
+
+	.cssg blockquote p {
+		margin: 0;
+	}
+
+.cssg_sub-menu {
+	display: none;
+	}
+
+	.cssg .cssg_sub-menu {
+		display: block;
+		}
+
+/* /CSSG */
 
 
 /* /Project

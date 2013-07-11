@@ -4,12 +4,6 @@ title: CSS-o-Gram
 description: Начало работы
 
 context: cssg
-cssg-sub-menu: |
-    <ul class="navigation_ul">
-        <li class="navigation_i __current">Первая часть</li>
-        <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/advanced.html">Вторая часть</a></li>
-        <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/legend.html">Синтаксис</a></li>
-    </ul>
 ---
 
 CSSG описывает конструкцию сущности привычным каскадом CSS классов.

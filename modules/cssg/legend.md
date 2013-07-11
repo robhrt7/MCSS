@@ -4,12 +4,8 @@ title: CSS-o-Gram
 description: Справка по синтаксису
 
 context: cssg
-cssg-sub-menu: |
-    <ul class="navigation_ul">
-        <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/basic.html">Первая часть</a></li>
-        <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/advanced.html">Вторая часть</a></li>
-        <li class="navigation_i __current">Синтаксис</li>
-    </ul>
+styles: |
+    .content code {line-height: 1.8;}
 ---
 
     element 											класс элемента

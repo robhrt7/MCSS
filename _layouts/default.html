@@ -21,7 +21,7 @@
 
     {% if page.styles %}
     <!-- Page Custom styles -->
-    <style>{{ page.title }}</style>
+    <style>{{ page.styles }}</style>
     {% endif %}
 </head>
 
@@ -89,7 +89,11 @@
                         <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/shorthand_dictionary.html">Словарь сокращений</a></li>
                         <li class="link-to-main navigation_i">
                             <a href="{{ site.baseurl }}/modules/cssg.html">Css-o-Gram (CSSG)</a>
-                            {{ page.cssg-sub-menu }}
+                            <ul class="navigation_ul cssg_sub-menu">
+                                <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/basic.html">Первая часть</a></li>
+                                <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/advanced.html">Вторая часть</a></li>
+                                <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/legend.html">Синтаксис</a></li>
+                            </ul>
                         </li>
                     </ul>
 

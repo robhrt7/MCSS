@@ -3,13 +3,7 @@ layout: default
 title: CSS-o-Gram
 description: аккуратно, наглядно, быстро - как SSG, только мирно
 
-context: inner-page
-cssg-sub-menu: |
-    <ul class="navigation_ul">
-        <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/basic.html">Первая часть</a></li>
-        <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/advanced.html">Вторая часть</a></li>
-        <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/legend.html">Синтаксис</a></li>
-    </ul>
+context: inner-page cssg
 
 ---
 
