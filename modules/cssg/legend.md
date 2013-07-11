@@ -3,7 +3,7 @@ layout: default
 title: CSS-o-Gram
 description: Справка по синтаксису
 
-context: cssg
+context: inner-page cssg
 styles: |
     .content code {line-height: 1.8;}
 ---

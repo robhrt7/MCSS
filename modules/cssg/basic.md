@@ -3,7 +3,7 @@ layout: default
 title: CSS-o-Gram
 description: Начало работы
 
-context: cssg
+context: inner-page cssg
 ---
 
 CSSG описывает конструкцию сущности привычным каскадом CSS классов.

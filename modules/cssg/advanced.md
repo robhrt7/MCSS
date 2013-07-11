@@ -3,7 +3,7 @@ layout: default
 title: CSS-o-Gram
 description: Копаем глубже
 
-context: cssg
+context: inner-page cssg
 ---
 
 ## Множества
