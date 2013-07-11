@@ -1,15 +1,22 @@
 ---
-layout: cssg-inner
+layout: default
 title: CSS-o-Gram
 description: аккуратно, наглядно, быстро - как SSG, только мирно
 
 context: inner-page
+cssg-sub-menu: |
+    <ul class="navigation_ul">
+        <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/basic.html">Первая часть</a></li>
+        <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/advanced.html">Вторая часть</a></li>
+        <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/legend.html">Синтаксис</a></li>
+    </ul>
+
 ---
 
 CSS-o-Gram (CSSG) - это "диаграмма CSS", по своей сути - комментарий в CSS файле, описывающий структуру сущности, к которой применяются стили. Сущность может быть элементом, блоком или проектом.
 
-Это ваш верный спутник в большом проекте и помощник для ваших коллег, если вы работаете в команде.  
-Порог вхождения минимален - используется привычный синтаксис и несколько логичных правил.  
+Это ваш верный спутник в большом проекте и помощник для ваших коллег, если вы работаете в команде.
+Порог вхождения минимален - используется привычный синтаксис и несколько логичных правил.
 
 ## Для кого и для чего
 
@@ -21,12 +28,12 @@ CSS-o-Gram (CSSG) - это "диаграмма CSS", по своей сути - 
 
 ## Как начать
 
-Ознакомиться с [первой частью]({{ site.baseurl }}/modules/cssg/basic.html) спецификации CSSG  
-Если все просто - пробуйте и изучайте [вторую часть]({{ site.baseurl }}/modules/cssg/advanced.html)  
+Ознакомиться с [первой частью]({{ site.baseurl }}/modules/cssg/basic.html) спецификации CSSG
+Если все просто - пробуйте и изучайте [вторую часть]({{ site.baseurl }}/modules/cssg/advanced.html)
 А [здесь]({{ site.baseurl }}/modules/cssg/legend.html) памятка по синтаксису
 
 -----
 
-Вопросы можно задавать по [электронной почте](mailto:wdybih@gmail.com).  
-Все материалы доступны для свободного распространения.  
+Вопросы можно задавать по [электронной почте](mailto:wdybih@gmail.com).
+Все материалы доступны для свободного распространения.
 При копировании [ссылка на источник](https://github.com/XOP/css-o-gram) обязательна.

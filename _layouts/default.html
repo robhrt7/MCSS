@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,9 +18,14 @@
     <![endif]-->
 
     <title>{{ page.title }}</title>
-  </head>
 
-  <body {% if page.context %}class="{{ page.context }}"{% endif %}>
+    {% if page.styles %}
+    <!-- Page Custom styles -->
+    <style>{{ page.title }}</style>
+    {% endif %}
+</head>
+
+<body {% if page.context %}class="{{ page.context }}"{% endif %}>
     <header class="header">
         <div class="content-wrap">
             <h1 class="header_t">{{ page.title }}</h1>
@@ -82,7 +87,10 @@
                         <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/modifiers.html">Модификаторы</a></li>
                         <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/naming.html">Именование</a></li>
                         <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/shorthand_dictionary.html">Словарь сокращений</a></li>
-                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/cssg.html">Css-o-Gram (CSSG)</a></li>
+                        <li class="link-to-main navigation_i">
+                            <a href="{{ site.baseurl }}/modules/cssg.html">Css-o-Gram (CSSG)</a>
+                            {{ page.cssg-sub-menu }}
+                        </li>
                     </ul>
 
                     <div class="navigation_t">
@@ -103,6 +111,13 @@
                         {{ site.project-author }}
                     </div>
                     <div class="repo-owner_links">{{ site.project-author-twitter }}</div>
+                </div>
+
+                <div class="repo-owner">
+                    <div class="repo-owner_t">{{ site.cssg-author-title }}</div>
+                    <div class="repo-owner_n">
+                        {{ site.cssg-author-name }}
+                    </div>
                 </div>
             </aside>
 
@@ -151,5 +166,5 @@
 
     <!-- Based on GitHub Pages Architect template by <a href="http://twitter.com/jasonlong">Jason Long</a> -->
 
-  </body>
+</body>
 </html>
