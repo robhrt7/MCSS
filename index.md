@@ -1,5 +1,5 @@
 ---
-layout: default-en
+layout: default
 title: MCSS
 description: Многослойная система организации CSS
 ---
