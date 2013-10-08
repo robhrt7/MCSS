@@ -1,8 +1,10 @@
 ---
-layout: default
+layout: default-en
 title: MCSS
 description: Многослойная система организации CSS
 ---
+
+[Basic english translation]({{ site.baseurl }}/en)
 
 ## Введение
 Многослойная система организации CSS основана на принципах [OOCSS](http://oocss.org/) и [БЭМ](http://bem.info/). Методология родилась и развивается в команде разработчиков [Одноклассники](http://corp.mail.ru/communications/odnoklassniki) и рекомендуется к использованию как основа для собственного свода правил и документаций.
@@ -237,9 +239,9 @@ description: Многослойная система организации CSS
 ### Code style
 Вместе с методологией советуем использовать следующие полезные практики для улучшения своего кода:
 
+* [Idiomatic CSS](https://github.com/necolas/idiomatic-css/tree/master/translations/ru-RU) - принципы написания однородного CSS-кода
 * [Google HTML/CSS style guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) - стайл-гайд по оформлению HTML и CSS кода
 * [CSScomb](http://csscomb.ru/) - инструмент для сортировки CSS-свойств в рамках селектора
-* [CSSDoc](http://cssdoc.net/) - правила оформления комментариев в CSS ([описание](http://habrahabr.ru/post/87406/))
 
 ### Best practises
 * Как можно больше комментируйте CSS, любые нестандартные свойства, конструкции, магические числа — это пригодится не только членам вашей команды, но и вам, когда вы через пару месяцев вернётесь к коду (правила комментирования кода, скоро в отдельном модуле MCSS)

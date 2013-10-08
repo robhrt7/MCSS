@@ -6,30 +6,41 @@ description: Multilayer CSS
 context: inner-page
 ---
 
-# Multilayer CSS
-
 [Оригинальная, русская версия документации]({{ site.baseurl }}/)
 
 ## Introduction
-Multilayer CSS organization methodology is based on BEM and OOCSS principles. It was born in Odnoklassniki.ru developers team and is recommended for other developers as core for own documentations and team based methologies.
+Multilayer CSS organization methodology is based on [BEM]((http://bem.info/)) and [OOCSS](http://oocss.org/) principles. It was invented in [Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki) (Top 10 world social network) developers team and is recommended for other developers as core for own documentation and team based methodologies.
 
-Despite the fact, that methodology was born in large project with more that 60 developers and manu inner services, it also can be easily used for small and medium sized projects.
+Despite the fact that this methodology originated in a large project with more than 60 developers and many inner services it can easily be used for small and medium sized projects as well.
 
-English translation for MCSS documentation was prepared in a rush, for webconf.lv conference in Riga. Sorry for possible mistakes, we will update this document in the nearest future.
+Documentation is still being constantly improved, along with secondary tools, such as front-end documentation engine [Source](http://sourcejs.com). Orinigally documentation was written in russian language and not all information is translated yet, feel free to leave transtaling pull requests.
 
 *You can leave your questions  in [Issues section on Github]({{ project-url }}/issues) or by email <r@rhr.me>.*
 
-### Main principles
-Pages are built from modules, every module must stay independend from parent context.
+### Fast navigation
 
-Modules are seperated to layers, with own rules of interaction.
+* [Main principles](#main)
+* [Style storing rules](#style-storing)
+* [1 layer — base](#1)
+* [2 layer — project](#2)
+* [3 layer — cosmetic](#3)
+* [Context](#context)
+* [Real life examples](#examples)
+* [Abbreviation dictionary](#dictionary)
+* [Recommendations](#recommendations)
+
+<a id="main"></a>
+### Main principles
+
+**MCSS** methodology is very independent and does not focus on specific code writing style, file organization system or tools necessary to work with it.
+
+Modules are separated in to layers, where each layer has its own rules for exploitation and interaction with other modules.
 
 ![image]({{ site.baseurl }}/images/modules.jpg)
 
-MCSS doesn't force using spefic code styles, you hust need to remember core methology rules.
-
+<a id="style-storing"></a>
 ### Style storing rules
-All styles of specific module must be placed in seperate section or CSS file:
+All styles of specific modules must be placed in separate section or CSS file:
 
 {% highlight css %}
 /* Module name
@@ -37,7 +48,7 @@ All styles of specific module must be placed in seperate section or CSS file:
 .module { }
 
 .module_list { }
-  .module_list__modificator { }
+  .module_list.__modificator { }
 /* /Module name */
 {% endhighlight %}
 
@@ -53,7 +64,7 @@ Modified selector with cascade, also are stored near other parent selectors:
 /* /Module name */
 {% endhighlight %}
 
-The only exception is the context module:
+The only exception is the context layer:
 
 {% highlight css %}
 /* Module name
@@ -66,28 +77,80 @@ The only exception is the context module:
 /* /Module name */
 {% endhighlight %}
 
-## Reset
+## Zero layer or Foundation
 Foundation includes resets and insignificantly changeable styles, which make up layout base and apply on all pages.
 
-Foundation styles, as all resets, is applied first, or in separate file, or at the most top of the compound CSS file.
+Foundation styles like all resets are connected from the very start, either in separate file or in the beginning of common CSS file.
 
 ## Module interaction scheme
 
 ![image]({{ site.baseurl }}/images/layers.jpg)
 
+<a id="1"></a>
 ## 1 layer — base
-First layer - is a portal framework, the core part of interface. It is based on reusable and abstract constructions:
+First layer - is a portal framework, the core part of interface. It is based on most reusable and abstract constructions:
 
 * forms
 * buttons
 * navigation blocks
 
-If you start to using MCSS, the first thing you should do - is creating a set of reusable standards.
+Markup of first layer modules is connected with overall portal style and designers guidelines. When working on base constructions, we recommend keeping in touch with designers, especially when it comes to developing common portal standards.
 
-As the part of the first layer you can use without a doubt  so popular framework as [Bootstrap](http://twitter.github.com/bootstrap/), [960gs](http://960.gs/), [inuit.css](https://github.com/csswizardry/inuit.css) and others.
+When starting using MCSS in your project, the first thing you should do - is creating a set of reusable standards.
 
+As the part of the first layer, you can use popular frameworks such as [Bootstrap](http://twitter.github.com/bootstrap/), [960gs](http://960.gs/), [inuit.css](https://github.com/csswizardry/inuit.css) and others.
+
+### Rules
+
+Fundamental first layer rule - all entities should be abstract, both with their names and mark-up.
+
+* Class names should not look "foreign" in any place on the portal.
+* Module blocks should have default style, but also should be easy to modify according to various project modules and tasks.
+
+First layer styles could be cascade-modified from other modules of the same layer and 2nd layer. This is due to the Rule regarding location of related styles in one place.
+
+**The core (1st layer) should be separated from 2nd layer modules, example:**
+
+Forms standard:
+
+{% highlight css %}
+.input-field { }
+    .input-field_text { }
+{% endhighlight %}
+
+Form standard interaction with button standard - cascade modification from 1st layer:
+
+{% highlight css %}
+.input-field { }
+    .input-field .button { }
+{% endhighlight %}
+
+Project module interaction with the standard in the 2nd layer:
+
+{% highlight css %}
+.project-module { }
+    .project-module .input-field { }
+{% endhighlight %}
+
+**2nd layer modification from the 1st one is forbidden!** In this case, layers are mixing up, causing chaos:
+
+{% highlight css %}
+    .input-field .project-module { }
+{% endhighlight %}
+
+Styles are connected right after the foundation, prior to 2nd layer, to support low level priority in selector weight.
+
+### Advantages
+Reusable and well thought-of first layer modules allow saving time on support of popular constructions, eliminating the need to maintain several similar modules.
+Re-usability also as well affects the final size of CSS-files.
+
+Having well-developed base allows to create new interfaces easily, most of which consist of standard elements.
+
+The samples of standard designs can be reused from one project to another, allowing accelerating the development both of the layout and backend functionality connected with it.
+
+<a id="2"></a>
 ## 2 layer — project
-Second layer includes isolated, project modules, which construct the page further:
+Second layer includes isolated, project modules, which further construct the page:
 
 * Registration form
 * Login block
@@ -95,7 +158,7 @@ Second layer includes isolated, project modules, which construct the page furthe
 
 ### Rules
 
-It is recommended to use as many as possible unique CSS classes in second layer layout; even if current design doesn't need styling better practice is to assign unique CSS class to it. Such handling provides better availability of each separate layout block, what allows easily correct styles, without affecting HTML structure.
+It is recommended to use as many as possible unique CSS classes in second layer layout; even if current design does not need styling, better practice is to assign unique CSS class to it. Such handling provides better availability of each separate layout block, what allows easily correct styles, without affecting HTML structure.
 
 Each module has to be as isolated as possible and to exist as separate, independent item of portal, which interacts with the core / base layer only.
 
@@ -123,30 +186,29 @@ Example displays second layer module **.toolbar**, which uses first layer standa
 /* /Toolbar */
 {% endhighlight %}
 
-**Example displays second layer module .toolbar, which uses first layer standard .umenu. To modify standard for projet needs, CSS cascade is used:.**
+**Example displays second layer module .toolbar, which uses first layer standard .umenu. To modify standard for projet needs, CSS cascade is used:**
 
-This is right:
+**This is right:**
 
 {% highlight css %}
 .project-module .other-project-module { }
 {% endhighlight %}
 
-**This is wrong::**
+This is wrong:
 
 {% highlight css %}
 .standard-module .project-module { }
 {% endhighlight %}
 
-### Benefits
-Module isolation provides easy access to their styles, without fear of affecting other portal parts. When working in team, each member can develop one module, not conflicting with other developers.
+### Advantages
+Module isolation provides easy access to their styles, without risk of affecting other portal parts. When working in team, each team member can develop single layer separately, not getting in to conflict with other developers.
 
-Styles of each module may be applied only on the pages, where needed.
+Styles of each module may be applied only to those pages, where they are needed.
 
-When portal turns off some functionality, it is easy to get rid of unnecessary styles - we need just to throw out one file or CSS block with corresponding styles.
+When functionality is disappearing from the portal, it is easy to get rid of unnecessary styles - all that is required is to throw out one file or CSS block with corresponding styles.
 
+<a id="3"></a>
 ## 3 layer — cosmetic
-
-
 
 Third layer consists of simple, slightly affecting styles:
 
@@ -154,10 +216,10 @@ Third layer consists of simple, slightly affecting styles:
 * low-level OOCSS - two properties for CSS class (.font-size_XL, .margin-t_L)
 * global modificators
 
-Layer can not exist in some variations of methodology usage, but in big projects this layer allows to deal with styles cloning and to describe rare, non-project conditions, going 'DRY'.
+Layer can be nonexistent in some cases of methodology usage, but in big projects, this layer allows to solve the duplicate styling issue and to describe rare, non-project conditions, going 'DRY'.
 
 ### Rules
-Third layer styles should be organized in a way to keep layout safe when we get rid of them. Losses should be minor e.g. colors, paddings...
+Third layer styles should be organized in a way to keep layout safe when styles are being discarded. Losses should be minor e.g. colors, paddings, etc.
 
 It is allowed to use some of OOCSS classes, two classes for block maximum, for rare, non-project situations:
 
@@ -165,22 +227,25 @@ It is allowed to use some of OOCSS classes, two classes for block maximum, for r
 <div class="font-size_XL margin-t_L color_red"></div>
 {% endhighlight %}
 
-**Cosmetic layer styles can not be modified with cascade of other styles, except for context..**
+**Cosmetic layer styles cannot be modified with cascade of other styles, except for context.**
 
-Cosmetic styles applied in the most end of CSS, also it is not allowed to use **!important**.
+Cosmetic styles are applied at the end of CSS, also it is not allowed to use **!important**.
 
-### Benefits
-Styles affect slightly on portal layout, dealing with code cloning and saving trouble of producing small project and base modules.
+### Advantages
+Styles have no major effect portal layout, however dealing with duplicate code issue and eliminating the need to produce small project- and base modules.
 
-Project selectors allow to deal fast with rare situations, when we need to apply just a couple of properties for non-project module.
+Project selectors allow to quickly dealing with rare situations, when we need to apply a couple of properties for non-project module.
 
+<a id="context"></a>
 ## Context
-This layer include styles of high context and @media-rules, that can be used for changing standard styles for features of different context:
+This layer includes styles of high context and @media-rules that can be used for changing standard styles for features of different context:
 
 * .ie8, .ie9 - browsers
 * .touch
 * .logged-in
 * media-queries
+
+Context layer is an exception in style location rules. Styles of this layer are being distributed between all layers, which are being cascade-modified from context:
 
 {% highlight css %}
 /* Module name
@@ -197,13 +262,18 @@ This layer include styles of high context and @media-rules, that can be used for
 /* /Module name */
 {% endhighlight %}
 
+<a id="examples"></a>
 ## Real life examples
-You can check MCSS in action at this [demo]({{ site.baseurl }}/examples/layers/), all layers are stored in one [CSS file]({{ site.baseurl }}/examples/layers/css/style.css), but could be also separated to individual files, like so:
+
+You can check MCSS in action in the [demo]({{ site.baseurl }}/examples/layers/). In the following example, all layers are stored in one [CSS file]({{ site.baseurl }}/examples/layers/css/style.css), but they could be also separated to individual files:
 
 ![image]({{ site.baseurl }}/images/file-system.png)
 
-In second [demo]({{ site.baseurl }}/examples/mcss_with_bootstrap/), we have shown how MCSS works with Bootstrap, as first layer base.
+In second [demo]({{ site.baseurl }}/examples/mcss_with_bootstrap/), you can see how MCSS works with Bootstrap, as first (base) layer.
 
+Site of the project is also designed by MCSS methodology; do not hesitate to look at the [source]({{ site.baseurl }}/theme/stylesheets/stylesheet.css).
+
+<a id="dictionary"></a>
 ### Abbreviation dictionary
 To escape large CSS selector names, we suggest using abbreviation dictionary:
 
@@ -224,9 +294,15 @@ To escape large CSS selector names, we suggest using abbreviation dictionary:
 
 In future, dictionary will mo moved to separate documentation module.
 
-## Future of MCSS
-* Internationalization
-* Documentation seperation to independent modules
-* Open source HTML specifications development environment
+<a id="recommendations"></a>
+## Recommendations
 
-Stay tuned, and follow updates on [@operatino_en](http://twitter.com/operatino_en)
+### Code style
+Along with methodology, we advise to use following useful practices to improve quality of your code:
+
+* [Principles of writing consistent, idiomatic CSS](https://github.com/necolas/idiomatic-css)
+* [Google HTML/CSS style guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) - style guide for HTML and CSS code configuration
+* [CSScomb](http://csscomb.ru/) - tool for CSS-property sorting
+
+### Best practices
+* Do comment CSS as much as you can, all non-standard constructions, magical numbers — this will be useful not only to the members of your team, but for you as we'll, when you will be back to reviewing the code after couple of months.

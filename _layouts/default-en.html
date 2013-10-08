@@ -41,7 +41,7 @@
     <div class="main">
         <div class="content-wrap clearfix">
             <div class="helpers_go-to-nav">
-                <a href="#sidebar">Перейти к навигации</a>
+                <a href="#sidebar">Go to navigation</a>
             </div>
 
             <section class="content" id="content">
@@ -68,65 +68,44 @@
                 <nav class="navigation">
 
                     <div class="navigation_t">
-                        {{ site.res-navigation }}
+                        {{ site.res-en-navigation }}
                     </div>
 
                     <ul class="navigation_ul">
-                        <li class="navigation_i __link-to-main"><a href="{{ site.baseurl }}">На главную</a></li>
-                        <li class="navigation_i helpers_go-to-content"><a href="#content">Перейти к контенту</a></li>
-                        <li class="navigation_i"><a href="{{ site.project-url }}">О проекте</a></li>
-                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/en">Basic english translation</a></li>
+                        <li class="navigation_i helpers_go-to-content"><a href="#content">Skip to content</a></li>
+                        <li class="navigation_i"><a href="{{ site.project-url }}/#multilayer-css">About this project</a></li>
+                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}">Оригинальная, русская версия документации</a></li>
                     </ul>
 
-                    <div class="navigation_t">
-                        {{ site.res-navigation-modules }}
-                    </div>
+                    <!--<div class="navigation_t">-->
+                        <!--{{ site.res-en-navigation-modules }}-->
+                    <!--</div>-->
 
-                    <ul class="navigation_ul">
-                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/README.html">О модулях</a></li>
-                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/css_placement.html">Расположение стилей</a></li>
-                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/modifiers.html">Модификаторы</a></li>
-                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/naming.html">Именование</a></li>
-                        <li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/shorthand_dictionary.html">Словарь сокращений</a></li>
-                        <li class="link-to-main navigation_i">
-                            <a href="{{ site.baseurl }}/modules/cssg.html">Css-o-Gram (CSSG)</a>
-                            <ul class="navigation_ul cssg_sub-menu">
-                                <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/basic.html">Первая часть</a></li>
-                                <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/advanced.html">Вторая часть</a></li>
-                                <li class="navigation_i"><a href="{{ site.baseurl }}/modules/cssg/legend.html">Синтаксис</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <!--<ul class="navigation_ul">-->
+                        <!--<li class="link-to-main navigation_i"><a href="{{ site.baseurl }}/modules/README.html">О модулях</a></li>-->
+                    <!--</ul>-->
 
-                    <div class="navigation_t">
-                        {{ site.res-navigation-links }}
-                    </div>
+                    <!--<div class="navigation_t">-->
+                        <!--{{ site.res-en-navigation-links }}-->
+                    <!--</div>-->
 
-                    <ul class="navigation_ul">
-                        <li class="link-to-main navigation_i"><a href="http://tohtml.it/post/43785238499/css">Видео запись презентации о MCSS</a></li>
-                        <li class="link-to-main navigation_i"><a href="http://tohtml.it/post/34285787881/mcss-unstrict-mode">Модель строгости в MCSS</a></li>
-                    </ul>
+                    <!--<ul class="navigation_ul">-->
+                        <!--<li class="link-to-main navigation_i"><a href="http://tohtml.it/post/43785238499/css">Видео запись презентации о MCSS</a></li>-->
+                    <!--</ul>-->
 
                 </nav>
 
                 <div class="repo-owner">
-                    <div class="repo-owner_t">{{ site.res-author }}</div>
+                    <div class="repo-owner_t">{{ site.res-en-author }}</div>
                     <div class="repo-owner_n">
-                        {{ site.res-project-author }}
+                        {{ site.res-en-project-author }}
                     </div>
-                    <div class="repo-owner_links">{{ site.res-project-author-twitter }}</div>
-                </div>
-
-                <div class="repo-owner">
-                    <div class="repo-owner_t">{{ site.cssg-author-title }}</div>
-                    <div class="repo-owner_n">
-                        {{ site.cssg-author-name }}
-                    </div>
+                    <div class="repo-owner_links">{{ site.res-en-project-author-twitter }}</div>
                 </div>
             </aside>
 
             <footer class="footer">
-                <p>{{ site.res-footer }}.</p>
+                <p>{{ site.res-en-footer }}.</p>
             </footer>
         </div>
     </div>

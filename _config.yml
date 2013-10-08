@@ -6,11 +6,11 @@ safe: true
 project-name: MCSS
 project-url: http://github.com/operatino/MCSS
 
-project-author: <a href="http://rhr.me">Роберт Харитонов</a>
-project-author-twitter: <a href="http://twitter.com/operatino">@operatino</a>
-
 cssg-author-title: Css-o-Gram
 cssg-author-name: <a href="mailto:eugeny.horoshilov@odnoklassniki.ru">Евгений Хорошилов</a>
+
+res-project-author: <a href="http://rhr.me">Роберт Харитонов</a>
+res-project-author-twitter: <a href="http://twitter.com/operatino">@operatino</a>
 
 res-watch-on-github: Посмотреть проект на
 res-download-archive: Скачать в архиве
@@ -20,3 +20,17 @@ res-author: Автор проекта
 res-navigation: Навигация
 res-navigation-modules: Модули документации
 res-navigation-links: Ссылки
+
+
+
+res-en-project-author: <a href="http://rhr.me">Robert Haritonov</a>
+res-en-project-author-twitter: <a href="http://twitter.com/operatino_en">@operatino_en</a>
+
+res-enwatch-on-github: Read more about project at
+res-en-download-archive: Download archive
+res-en-footer: This site is publushed through <a href="http://pages.github.com">GitHub Pages</a> based on <a href="http://jekyllrb.com">Jekyll</a>
+res-en-author: Project author
+
+res-en-navigation: Navigation
+res-en-navigation-modules: Documentation modules
+res-en-navigation-links: Links
