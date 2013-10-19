@@ -1,7 +1,7 @@
 ---
 layout: default-en
 title: CSS-o-Gram
-description: neat, intuitive, fast - like [SSG](http://en.wikipedia.org/wiki/Steyr_SSG_69), but peaceful
+description: neat, intuitive, fast - like SSG, but peaceful
 
 context: inner-page cssg
 ---
