@@ -23,7 +23,10 @@ res-navigation-modules: Модули документации
 res-navigation-links: Ссылки
 
 
-en-project-descr-url: http://github.com/operatino/MCSS/#multilayer-css
+en-baseurl: /MCSS/en
+
+en-project-url: http://github.com/operatino/MCSS/en
+en-project-descr-url: http://github.com/operatino/MCSS/blob/gh-pages/en/README.md
 
 en-cssg-author-title: Css-o-Gram
 en-cssg-author-name: <a href="mailto:eugeny.horoshilov@odnoklassniki.ru">Evgeny Khoroshilov</a>

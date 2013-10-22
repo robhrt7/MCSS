@@ -1,4 +1,4 @@
-[English README](#multilayer-css)
+[English README](http://github.com/operatino/MCSS/blob/gh-pages/en/README.md)
 
 # Многослойный CSS
 
@@ -29,21 +29,4 @@ ___
 
 Файлы в репозитории являютcя исходниками [сайта проекта](http://operatino.github.io/MCSS/) на основе [Jekyll](http://jekyllrb.com).
 
-Cодержимое репозитория свободно для распростронения и изменения при указании сайта оригинального проекта — [operatino.github.io/MCSS](http://operatino.github.io/MCSS/), и имени автора — [Роберт Харитонов](http://rhr.me).
-
-# Multilayer CSS
-
-Multilayer CSS organization methodology is based on [BEM]((http://bem.info/)) and [OOCSS](http://oocss.org/) principles. It was invented in [Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki) (Top 10 world social network) developers team and is recommended for other developers as core for own documentation and team based methodologies.
-___
-**[Project home page](http://operatino.github.io/MCSS/en/)**
-___
-
-Documentation is still being constantly improved, along with secondary tools, such as front-end documentation engine [Source](http://sourcejs.com). Orinigally documentation was written in russian language and not all information is translated yet, feel free to leave transtaling pull requests.
-
-*You can leave your questions  in [Issues section on Github]({{ project-url }}/issues) or by email <r@rhr.me>.*
-
-## Future of MCSS
-* Internationalization
-* Documentation separation to independent modules (already in russian version)
-
-Stay tuned, and follow updates on [@operatino_en](http://twitter.com/operatino_en)
+Cодержимое репозитория свободно для распростронения и изменения при указании сайта оригинального проекта — [operatino.github.io/MCSS](http://operatino.github.io/MCSS/), и имени автора — [Харитонов Роберт](http://rhr.me).
