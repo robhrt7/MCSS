@@ -2,11 +2,7 @@
 layout: default-en
 title: MCSS
 description: Multilayer CSS
-
-context: inner-page
 ---
-
-[Оригинальная, русская версия документации]({{ site.baseurl }}/)
 
 ## Introduction
 Multilayer CSS organization methodology is based on [BEM]((http://bem.info/)) and [OOCSS](http://oocss.org/) principles. It was invented in [Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki) (Top 10 world social network) developers team and is recommended for other developers as core for own documentation and team based methodologies.

@@ -7,9 +7,9 @@ context: inner-page cssg
 
 ---
 
-[English version]({{ site.baseurl }}/modules/cssg/english.html)
+[English version]({{ site.baseurl }}/en/modules/cssg.html)
 
-## Введение 
+## Введение
 
 CSS-o-Gram (CSSG) - это "диаграмма CSS", по своей сути - комментарий в CSS файле, описывающий структуру сущности, к которой применяются стили. Сущность может быть элементом, блоком или проектом.
 
