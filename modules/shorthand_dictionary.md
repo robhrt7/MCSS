@@ -18,6 +18,7 @@ context: inner-page
     b - body | bottom
     bg - background
     brd - border
+    btn - button
 
     cat - catalog | category
     cl - clear
