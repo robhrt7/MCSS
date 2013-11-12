@@ -11,7 +11,7 @@ Despite the fact that this methodology originated in a large project with more t
 
 Documentation is still being constantly improved, along with secondary tools, such as front-end documentation engine [Source](http://sourcejs.com). Originally documentation was written in russian language and not all information is translated yet, feel free to leave translating pull requests.
 
-*You can leave your questions  in [Issues section on Github]({{ project-url }}/issues) or by email <r@rhr.me>.*
+*You can leave your questions  in [Issues section on Github]({{ site.project-url }}/issues) or by email <r@rhr.me>.*
 
 ### Fast navigation
 

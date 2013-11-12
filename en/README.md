@@ -7,7 +7,7 @@ ___
 
 Documentation is still being constantly improved, along with secondary tools, such as front-end documentation engine [Source](http://sourcejs.com). Orinigally documentation was written in russian language and not all information is translated yet, feel free to leave transtaling pull requests.
 
-*You can leave your questions  in [Issues section on Github]({{ project-url }}/issues) or by email <r@rhr.me>.*
+*You can leave your questions  in [Issues section on Github](http://github.com/operatino/MCSS/issues) or by email <r@rhr.me>.*
 
 ## Future of MCSS
 * Internationalization
