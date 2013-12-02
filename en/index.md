@@ -5,9 +5,9 @@ description: Multilayer CSS
 ---
 
 ## Introduction
-Multilayer CSS organization methodology is based on [BEM]((http://bem.info/)) and [OOCSS](http://oocss.org/) principles. It was invented in [Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki) (Top 10 world social network) developers team and is recommended for other developers as core for own documentation and team based methodologies.
+Multilayer CSS organization methodology is based on [BEM](http://bem.info/) and [OOCSS](http://oocss.org/) principles. It was invented in [OK.ru](http://corp.mail.ru/en/communications/odnoklassniki) (Top 10 world social network) developers team and is recommended for other developers as core for own documentation and team based methodologies.
 
-Despite the fact that this methodology originated in a large project with more than 60 developers and many inner services it can easily be used for small and medium sized projects as well.
+Despite the fact that this methodology originated in a large project with more than 60 developers and many inner services it can easily be used for small and medium sized projects as well. Its scalability gives developers an opportunity to chose the level of strictness of selected rules.
 
 Documentation is still being constantly improved, along with secondary tools, such as front-end documentation engine [Source](http://sourcejs.com). Originally documentation was written in russian language and not all information is translated yet, feel free to leave translating pull requests.
 
@@ -29,9 +29,9 @@ Documentation is still being constantly improved, along with secondary tools, su
 <a id="main"></a>
 ### Main principles
 
-**MCSS** methodology is very independent and does not focus on specific code writing style, file system organization or specialized tools to work with it.
+**MCSS** methodology is very scalable and does not force using specific code style, file system organization or specialized tools to work with it. The main thing is about separating rules for different blocks.
 
-CSS code modules (blocks) are separated in to layers, where each layer has its own rules for exploitation and interaction with other layer modules.
+CSS modules (and blocks in them) are separated in to layers, where each layer has its own rules for exploitation and interaction with other layer modules.
 
 ![image]({{ site.baseurl }}/images/modules.jpg)
 
