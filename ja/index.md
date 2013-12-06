@@ -6,7 +6,7 @@ description: Multilayer CSS
 
 ## はじめに
 
-Multilayer CSS構造方法論は[BEM]((http://bem.info/))と[OOCSS](http://oocss.org/)の原理を基にしています。この方法論は[Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki)（世界のソーシャルネットワークのTOP10）開発チームによって作り出され、ドキュメントやチームベースの方法論の中核として開発者にお勧めです。
+Multilayer CSS構造方法論は[BEM]((http://bem.info/)と[OOCSS](http://oocss.org/)の原理を基にしています。この方法論は[Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki)（世界のソーシャルネットワークのTOP10）開発チームによって作り出され、ドキュメントやチームベースの方法論の中核として開発者にお勧めです。
 
 この方法論は60人以上の開発者と多くの内部サービスという巨大なプロジェクトから生まれましたが、中小規模のプロジェクトにも簡単に導入できます。その拡張性により、開発者はルールの厳格さのレベルを選択できます。
 
