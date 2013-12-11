@@ -16,7 +16,7 @@ Multilayer CSS構成システムは[BEM]((http://bem.info/)と[OOCSS](http://ooc
 
 ### ナビゲーション
 
-* [主要原則](#main)
+* [基本原則](#main)
 * [スタイルの格納ルール](#style-storing)
 * [モジュールの対応図](#interaction)
 * [レイヤー 1 — ベース（ファーストレイヤー）](#1)
