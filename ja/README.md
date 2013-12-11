@@ -1,11 +1,11 @@
 # Multilayer CSS
 
-Multilayer CSS構造方法論は[BEM]((http://bem.info/)と[OOCSS](http://oocss.org/)の原理を基にしています。この方法論は[Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki)（世界のソーシャルネットワークのTOP10）開発チームによって作り出され、ドキュメントやチームベースの方法論の中核として開発者にお勧めです。
+Multilayer CSS構成システムは[BEM]((http://bem.info/)と[OOCSS](http://oocss.org/)の原理を基にしています。この方法論は[Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki)（世界のソーシャルネットワークのTOP10）開発チームによって作り出され、ドキュメントとチームベースのシステムの中核として開発者にお勧めです。
 ___
 **[プロジェクトホームページ](http://operatino.github.io/MCSS/ja/)**
 ___
 
-ドキュメントはフロントエンドドキュメンテーションエンジンである[Source](http://sourcejs.com)などの二次ツールを使い、常に改善されています。オリジナルのドキュメントはロシア語で記述されており、全ての情報はまだ翻訳されていませんが、翻訳のプルリクエストはお気軽にどうぞ。
+このドキュメントはドキュメント作成エンジン[Source](http://sourcejs.com)などの補助ツールを使い、常に改善されています。オリジナルのドキュメントはロシア語で記述されており、全ての情報はまだ翻訳されていませんが、翻訳のプルリクエストはお気軽にどうぞ。
 
 *何か質問があれば[Issues section on Github](http://github.com/operatino/MCSS/issues)またはメールアドレス<r@rhr.me>まで。*
 
