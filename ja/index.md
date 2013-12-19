@@ -6,7 +6,7 @@ description: Multilayer CSS
 
 ## はじめに
 
-Multilayer CSS構成システムは[BEM]((http://bem.info/)と[OOCSS](http://oocss.org/)の原理を基にしています。この方法は[Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki)（世界のソーシャルネットワークのTOP10）開発チームによって作り出され、ドキュメントとチームベースのシステムの中核として開発者にお勧めです。
+Multilayer CSS構成システムは[BEM](http://bem.info/)と[OOCSS](http://oocss.org/)の原理を基にしています。この方法は[Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki)（世界のソーシャルネットワークのTOP10）開発チームによって作り出され、ドキュメントとチームベースのシステムの中核として開発者にお勧めです。
 
 この方法は60人以上の開発者と多くの内部サービスという巨大なプロジェクトから生まれましたが、中小規模のプロジェクトにも簡単に導入できます。その拡張性により、開発者はルールの厳格さのレベルを選択できます。
 
@@ -303,7 +303,7 @@ MCSSを利用するいくつかのケースではこのレイヤーは存在し�
 <a id="dictionary"></a>
 ### 略語辞典
 
-長いCSSセレクタ名を避けるため、略語辞典の利用をお勧めします：
+長いCSSセレクター名を避けるため、略語辞典の利用をお勧めします：
 
     a - link (<a> tag)
     ac - action
