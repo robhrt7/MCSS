@@ -42,3 +42,24 @@ en-res-author: Project author
 en-res-navigation: Navigation
 en-res-navigation-modules: Documentation modules
 en-res-navigation-links: Links
+
+
+ja-baseurl: /MCSS/ja
+
+ja-project-url: http://github.com/operatino/MCSS/ja
+ja-project-descr-url: http://github.com/operatino/MCSS/blob/gh-pages/ja/README.md
+
+ja-cssg-author-title: Css-o-Gram
+ja-cssg-author-name: <a href="mailto:eugeny.horoshilov@odnoklassniki.ru">Evgeny Khoroshilov</a>
+
+ja-res-project-author: <a href="http://rhr.me">Robert Haritonov</a>
+ja-res-project-author-twitter: <a href="http://twitter.com/operatino_en">@operatino</a>
+
+ja-res-watch-on-github: Checkout project at
+ja-res-download-archive: Download archive
+ja-res-footer: This site is published through <a href="http://pages.github.com">GitHub Pages</a> based on <a href="http://jekyllrb.com">Jekyll</a>
+ja-res-author: Project author
+
+ja-res-navigation: ナビゲーション
+ja-res-navigation-modules: ドキュメントモジュール
+ja-res-navigation-links: リンク
