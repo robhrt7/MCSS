@@ -6,7 +6,8 @@ ___
 ___
 
 このドキュメントはドキュメント作成エンジン[Source](http://sourcejs.com)などの補助ツールを使い、常に改善されています。オリジナルのドキュメントはロシア語で記述されており、全ての情報はまだ翻訳されていませんが、翻訳のプルリクエストはお気軽にどうぞ。
-Big respect to @Matori for japanese translation.
+
+Big respect to [Matori](http://github.com/Matori) for japanese translation.
 
 *何か質問があれば[Issues section on Github](http://github.com/operatino/MCSS/issues)またはメールアドレス<r@rhr.me>まで。*
 
