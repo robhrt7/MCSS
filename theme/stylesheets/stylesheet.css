@@ -66,6 +66,8 @@ table {
 /* /Reset
 ---------------------------------------------------------------------------------- */
 
+
+
 /* Base - First layer
 ---------------------------------------------------------------------------------- */
 
@@ -87,6 +89,73 @@ a {
 	a:hover {
 		color: #2268b2;
 		}
+
+
+
+/* Watch on github
+-------------------------------------------------- */
+.watch-on-github {
+	width: 134px;
+	height: 58px;
+	padding-left: 68px;
+	padding-top: 22px;
+	background: url(../images/github-button.png) no-repeat;
+
+	line-height: 1.2;
+	font-size: 23px;
+	color: #fff;
+	text-decoration: none;
+	}
+
+	.watch-on-github:hover {
+		color: #fff;
+		text-decoration: underline;
+		}
+
+.watch-on-github_text {
+	display: block;
+	font-size: 11px;
+	}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+	.watch-on-github {
+		position: relative;
+
+		width: auto;
+		height: auto;
+		display: inline-block;
+		margin-top: 15px;
+		background-image: none;
+		background-color: #9ddcff;
+
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+
+		padding: 5px 10px;
+		text-align: center;
+		font-size: 13px;
+		line-height: 1;
+		color: #2879d0;
+		}
+		.watch-on-github:hover {
+			color: #2268B2;
+			}
+
+	.watch-on-github_text {
+		display: inline;
+		font-size: 13px;
+		}
+	}
+/* /Watch on github */
+
+/* /Base
+---------------------------------------------------------------------------------- */
+
+
+
+/* Project - Second layer
+---------------------------------------------------------------------------------- */
 
 /* Layout
 -------------------------------------------------- */
@@ -110,6 +179,8 @@ a {
 		}
 
 /* /Layout */
+
+
 
 /* Header
 -------------------------------------------------- */
@@ -201,6 +272,8 @@ a {
 				}
 		}
 /* /Header */
+
+
 
 /* Main
 -------------------------------------------------- */
@@ -444,6 +517,8 @@ a {
 	}
 /* /Content */
 
+
+
 /* Sidebar
 -------------------------------------------------- */
 
@@ -469,6 +544,8 @@ a {
 	}
 
 /* /Sidebar */
+
+
 
 /* Watch on github
 -------------------------------------------------- */
@@ -527,29 +604,6 @@ a {
 	}
 /* /Watch on github */
 
-/* Footer
--------------------------------------------------- */
-
-.footer {
-	clear: both;
-	border-top: solid 1px #ddd;
-	margin-top: 40px;
-	padding-top: 20px;
-	padding-bottom: 30px;
-	font-size: 13px;
-	color: #aaa;
-	}
-
-	.footer a {
-		color: #666;
-		}
-
-	.footer a:hover {
-		color: #444;
-		}
-
-/* /Footer */
-
 /* /Base
 ---------------------------------------------------------------------------------- */
 
@@ -579,6 +633,8 @@ a {
 	}
 
 /* /Repository owner */
+
+
 
 /* Navigation
 -------------------------------------------------- */
@@ -709,8 +765,34 @@ a {
 /* /CSSG */
 
 
+
+/* Footer
+-------------------------------------------------- */
+
+.footer {
+	clear: both;
+	border-top: solid 1px #ddd;
+	margin-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	font-size: 13px;
+	color: #aaa;
+	}
+
+	.footer a {
+		color: #666;
+		}
+
+	.footer a:hover {
+		color: #444;
+		}
+
+/* /Footer */
+
 /* /Project
 ---------------------------------------------------------------------------------- */
+
+
 
 /* Cosmetic - Third layer
 ---------------------------------------------------------------------------------- */
