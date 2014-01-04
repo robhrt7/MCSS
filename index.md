@@ -15,7 +15,7 @@ Basic [English]({{ site.baseurl }}/en) and [Japanese]({{ site.baseurl }}/ja) tra
 
 **Корневые правила методологии описаны на этой странице, для более глубокого ознакомления советуем посмотреть [видео запись презентации](http://tohtml.it/post/43785238499/mcss-video) методологии и почитать подробней об отдельных правилах можно в [модулях документации]({{ site.baseurl }}/modules/README.html).**
 
-*С вопросами можно обращаться в раздел [Issues на Github](https://github.com/operatino/MCSS/issues) или по почте <r@rhr.me>.*
+*Всегда будем рады ответить на ваши вопросы в разделе [Issues на Github](https://github.com/operatino/MCSS/issues) или в комментариях на страницах сайта проекта.*
 
 ### Быстрая навигация
 

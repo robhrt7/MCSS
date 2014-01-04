@@ -1,13 +1,15 @@
 # Multilayer CSS
 
-Multilayer CSS organization methodology is based on [BEM]((http://bem.info/)) and [OOCSS](http://oocss.org/) principles. It was invented in [Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki) (Top 10 world social network) developers team and is recommended for other developers as core for own documentation and team based methodologies.
+Multilayer CSS organization methodology is a guideline to structure your CSS.
+
+Core methodology principles are based on [BEM]((http://bem.info/)) and [OOCSS](http://oocss.org/) ideas. MCSS was invented in [Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki) (Top 10 world social network) developers team and is recommended for other developers as core for own documentation and team based methodologies.
 ___
 **[Project home page](http://operatino.github.io/MCSS/en/)**
 ___
 
-Documentation is still being constantly improved, along with secondary tools, such as front-end documentation engine [Source](http://sourcejs.com). Orinigally documentation was written in russian language and not all information is translated yet, feel free to leave transtaling pull requests.
+Documentation is still being constantly improved, along with secondary tools, such as front-end documentation engine [Source](http://sourcejs.com). Originally documentation was written in russian and not all information is translated yet, but in upcoming updates all contents will be translated and main project language will be changed to english.
 
-*You can leave your questions  in [Issues section on Github](http://github.com/operatino/MCSS/issues) or by email <r@rhr.me>.*
+*Please don't hesitate to leave your questions in [Issues section on Github](http://github.com/operatino/MCSS/issues).*
 
 ## Future of MCSS
 * Internationalization
