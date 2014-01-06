@@ -35,17 +35,20 @@ Documentation is still being constantly improved, along with secondary tools, su
 * [Recommendations](#recommendations)
 
 <a id="main"></a>
-### Main principles
+### 主要原则
 
 **MCSS** methodology is very scalable and does not force using specific code style, file system organization or specialized tools to work with it. The main thing is about separating rules for different blocks.
+**MCSS** 的方法论是非常灵活的并且不需要强制使用特定的编码风格, 文件系统组织或者特定的工具才能工作.主要的事情就是分割规则到不同的块.
 
 CSS modules (and blocks in them) are separated in to layers, where each layer has its own rules for exploitation and interaction with other layer modules.
+CSS 模块(和里面的块) 被分割成层, 每个层都有自己的规则去利用和交互别的层.
 
 ![image]({{ site.baseurl }}/images/modules.jpg)
 
 <a id="style-storing"></a>
-### Style storing rules
+### 样式存放规则
 All styles of specific modules must be placed in separate section or CSS file:
+所有的特定模块的样式必须被放在被分离的部分或者 css 文件:
 
 {% highlight css %}
 /* Module name
@@ -58,6 +61,7 @@ All styles of specific modules must be placed in separate section or CSS file:
 {% endhighlight %}
 
 Modified selector with cascade, also are stored near other parent selectors:
+层叠的修饰选择器也要被放在靠近父级选择器的附近:
 
 {% highlight css %}
 /* Module name
@@ -70,6 +74,7 @@ Modified selector with cascade, also are stored near other parent selectors:
 {% endhighlight %}
 
 The only exception is the **context layer:**
+唯一的例外是 **上下文层**
 
 {% highlight css %}
 /* Module name
@@ -83,20 +88,27 @@ The only exception is the **context layer:**
 {% endhighlight %}
 
 This part of documentation will be moved to separate document module and will be described more accurate (already available in [russian]({{ site.baseurl }}/modules/css_placement.html)).
+这部分文档会被一到单独的文档模块并且被更精确的描述([俄文版]({{ site.baseurl }}/modules/css_placement.html)的已经有了)
 
 ## Zero layer or Foundation
+## 第0层或者地基
 Foundation includes resets and insignificantly changeable styles, which describe main layout base and apply on all pages.
+地基包含了重置和无关紧要的可变的样式,描述了主要的基本布局并且应用与所有页面.
 
 Foundation styles like all resets are connected from the very start, either in separate file or in the beginning of common CSS file:
+基础样式就像所有的重置一样,都在开头的单独文件或者 common 的 CSS 文件头部:
 
 <a id="interaction"></a>
 ## Module interaction scheme
+## 模块交互方案
 
 ![image]({{ site.baseurl }}/images/layers.jpg)
 
 ### Style linking order
+### 样式链接顺序
 
 Every layer styles must be linked to the page in right order to maintain right relations between selectors of different modules/layers:
+每一个层样式必须被页面以正确的顺序被连接来保持正确的关系在不同的模块/层的选择器中:
 
 	0_layer_foundation
 		reset.css
@@ -111,29 +123,43 @@ Every layer styles must be linked to the page in right order to maintain right r
 
 <a id="1"></a>
 ## 1 layer — base
+## 1 层 - 基础
 First layer - is a website framework, the core part of interface. It is based on most reusable and abstract constructions:
+第一层 - 是一个网站框架, 界面的核心部分.它是基础的在大多数可重用的和抽象的构造.
 
-* forms
-* buttons
-* navigation blocks
-* and etc
+* forms 表单
+* buttons 按钮
+* navigation blocks 导航块
+* and etc 其它
 
 Base layer styles must be integrated with designers style guides as close as possible. As modules of first layer are meant to be reused across all website interfaces, they must look appropriate and fit to other interface parts without modification.
 
+基础层样式必须尽量和设计师的样式指导相整合.因为第一层的模块意味着要贯穿整个网站的界面,它们必须在不修改的情况下和其他界面显得和谐.
+
 **Starting to use MCSS in your project, the first thing you should do - is creating a set of reusable standards.**
+**开始使用 MCSS 在你的项目中, 第一件事你应该做的 - 是创建一系列可服用的标准.**
 
 You can easily reuse popular frameworks such as [Bootstrap](http://twitter.github.com/bootstrap/), [960gs](http://960.gs/), [inuit.css](https://github.com/csswizardry/inuit.css) and others as part of the first layer.
+你可以很容易的使用流行的框架比如[Bootstrap](http://twitter.github.com/bootstrap/), [960gs](http://960.gs/), [inuit.css](https://github.com/csswizardry/inuit.css) 和其他来作为第一层的一部分.
 
 ### Rules
+### 规则
 
 First layer fundamental rule - all entities should be abstract, both with their names and mark-up.
+
+第一层基础规则 - 所有的存在都应该是抽象的,包括它们的名字和mark-up
 
 * Class names should not look "foreign" in any place on the interface.
 * Module blocks should have default style, but also should be easy to modify according to various project modules and tasks.
 
+* 类名不应该看上去"不协调"在界面的任何地方.
+* 模块应该有默认的样式,但是也可以被容易的修改根据不通的项目模块和任务.
+
 First layer styles could be cascade-modified from other modules of the same layer and 2nd layer. This is due to the Rule regarding location of related styles in one place.
+第一层的样式可以被层叠修改从同一层的其他模块或者第二层.因为一个规则:regarding location of related styles in one place.
 
 **Base styles should be separated from 2nd layer modules and stay independent from project layer styles.**
+**基础样式应该从第二层模块中分割出来并且保持项目层样式的独立性**
 
 Forms standard:
 
@@ -165,29 +191,41 @@ Project module interaction with the standard in the 2nd layer:
 Base styles are connected right after the foundation, prior to 2nd layer, to support low level priority in selector weight.
 
 ### Advantages
+### 优势
 Reusable and well thought-of first layer modules allow saving time on support of popular constructions, eliminating the need to maintain several similar modules.
+重用和好的思考出的第一层模块允许节省时间在支持流行结构,减少维持多个相似的模块.
+
 Re-usability also as well affects the final size of CSS-files and page rendering time.
+重用性也会影响 css 文件的最终尺寸和页面加载时间.
 
 Having well-developed base allows to create new interfaces easily, most of which consist of standard elements.
+有了高大上的基础允许容易创建界面,大多数标准元素的组合.
 
 The samples of standard designs can be reused from one project to another, allowing accelerating the development both of the layout and backend functionality connected with it.
+标准的设计例子可以在项目之间重用,促进了布局和后端的连接.
 
 <a id="2"></a>
 ## 2 layer — project
 Second layer includes isolated, project modules, which further construct the page:
+第二层包含单独的,项目模块,增进页面结构
 
-* Registration form
-* Login block
-* Shopping cart
-* and etc
+* Registration form 注册表单
+* Login block 登录块
+* Shopping cart 购物车
+* and etc 其它
 
 ### Rules
+### 规则
 
 It is recommended to use as many as possible unique CSS classes in second layer layout; even if current design does not need styling, better practice is to assign unique CSS class to it. Such approach provides better availability of each separate layout block, which allows easily correct styles, without affecting HTML structure.
+建议使用尽可能多的唯一的 css 类在第二层;即使当前的设计不需要样式,更好的实践是飞陪唯一的 css 类.这样的方法使得每个分开的层块能被更好的访问到,允许更容易的纠正样式,而不影响 html 结构
+
 
 Each module has to be as isolated as possible - independent interface block, which interacts with the base layer only.
+每个模块应该尽量的独立 - 独立于界面块, 只和基础层交互.
 
 To use the first layer construction in project module, we need to assign one more CSS class into HTML:
+使用第一层的结构在项目模块里, 我们需要分配另一个 css 类在 html 里.
 
 {% highlight html %}
 <header class="toolbar">
@@ -227,10 +265,13 @@ This is wrong:
 
 ### Advantages
 Module isolation provides easy access to their styles, without risk of affecting other interface parts. When working in team, each team member can develop single layer separately, not getting in to conflict with other developers.
+模块分离提供了更容易去样式它们,不必冒着影响其他界面部分的风险.当团队合作时,每个小组成员可以开发单独的分隔的层, 不会和其他开发者冲突.
 
 Styles of each module may be applied only to those pages, where they are needed.
+每个模块的样式可以只被应用于他们需要的页面.
 
 When functionality is disappearing from the website, it is easy to get rid of unnecessary styles - all that is required is to throw out one module with corresponding styles.
+当网站的功能不需要时,很容易放弃不必要的样式 - 所需要做的就是扔掉一个模块和相应的样式.
 
 <a id="3"></a>
 ## 3 layer — cosmetic
