@@ -277,41 +277,52 @@ When functionality is disappearing from the website, it is easy to get rid of un
 ## 3 layer — cosmetic
 
 Third layer consists of simple, slightly affecting styles:
+第三层由简单的轻微的影响样式组成:
 
-* links colors
+* links colors 超链接颜色
 * low-level OOCSS - two properties for CSS class (.font-size_XL, .margin-t_L)
-* global modifiers
+* 低层次的 OOCSS - 二属性
+* global modifiers 全局修饰
 
 Layer can be nonexistent in some cases of methodology usage, but in big projects, this layer allows to solve the duplicate styling issue and to describe rare, non-project conditions, going 'DRY'.
+这一层可以不存在在一些方法论用例中, 但是在大型项目中, 这一层允许解决重复的样式问题并且描述罕见的没有项目的情况,更加'DRY'
 
 ### Rules
 Third layer styles should be organized in a way to keep layout safe when styles are being discarded. Losses should be minor e.g. colors, paddings, etc.
+第三层样式应该被组织成保持层安全,当被丢弃时.损失应该是最小的,比如 颜色 内边距等等.
 
 It is allowed to use some of simple OOCSS classes, two classes for block maximum, for rare, non-project situations:
+允许使用一些简单的OOCSS 类,
 
 {% highlight html %}
 <div class="font-size_XL margin-t_L color_red"></div>
 {% endhighlight %}
 
 **Cosmetic layer styles cannot be modified with cascade from other layers, except the context selectors.**
+**装饰层样式不能被其他层的层叠样式修改,除了上下文选择器**
 
 Cosmetic styles are applied at the end of CSS. It is not recommended to use **!important**.
+装饰层样式被放在 CSS 的尾部.不推荐使用 **!important**
 
 ### Advantages
 Styles doesn't have major effect to website layout, however helps dealing with duplicate code issue and eliminating the need to produce small project and base modules.
+样式对网站布局没有大的影响,帮助处理重复代码的问题并且减少生产小项目和基础模块的生产.
 
 Simple selectors allow to quickly deal with rare situations, when we need to apply a couple of properties for non-project module.
+简单选择器允许快速处理少数情境, 当我们需要应用一些属性到没有项目模块的情境时.
 
 <a id="context"></a>
 ## Context
 This layer includes styles of high context and @media-rules that can be used for changing standard styles for features of different context:
+这层包含了高层的上下文和媒体规则可以改变标准的样式为了未来的不同上下文:
 
-* .ie8, .ie9 - browsers
-* .touch
-* .logged-in
-* media-queries
+* .ie8, .ie9 - browsers 浏览器
+* .touch 触摸
+* .logged-in 登录 
+* media-queries 媒体查询
 
 **Context layer is an exception in style location rules.** Styles of this layer are being distributed between all layers, which are being cascade-modified from context:
+**上下文层在样式位置上是个例外** 这一层的样式分布在所有的层忠,可以根据上下文层叠修饰:
 
 {% highlight css %}
 /* Module name
@@ -330,18 +341,23 @@ This layer includes styles of high context and @media-rules that can be used for
 
 <a id="examples"></a>
 ## Real life examples
+## 现实生活中的例子
 
 You can check MCSS in action in this [demo]({{ site.baseurl }}/examples/layers/). In the following example, all layers are stored in one [CSS file]({{ site.baseurl }}/examples/layers/css/style.css), but they could be also separated to individual files (blocks):
+你可以检出 MCSS 实战在这里[demo]({{ site.baseurl }}/examples/layers/).在下面的例子中,所有的层都被储存在一个[CSS 文件]({{ site.baseurl }}/examples/layers/css/style.css), 但是它们可以被分割在单独的文件(块)中:
 
 ![image]({{ site.baseurl }}/images/file-system.png)
 
 In second [demo]({{ site.baseurl }}/examples/mcss_with_bootstrap/), you can see how MCSS works with Bootstrap, as first (base) layer.
+在第二个[demo]({{ site.baseurl }}/examples/mcss_with_bootstrap/), 你会看到 MCSS 如何和 Bootstrap 一起工作, 作为第一层(基础)层.
 
 Site of the project is also designed by MCSS methodology; do not hesitate to look at the [source]({{ site.baseurl }}/theme/stylesheets/stylesheet.css).
+本站也是基于 MCSS 理论来设计的, 快看看 [源码]({{ site.baseurl }}/theme/stylesheets/stylesheet.css).
 
 <a id="dictionary"></a>
 ### Abbreviation dictionary
 To escape large CSS selector names, we suggest using abbreviation dictionary:
+
 
     a - link (<a> tag)
     ac - action
