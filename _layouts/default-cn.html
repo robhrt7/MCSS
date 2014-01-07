@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/theme/stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/theme/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/theme/stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>{{ page.title }}</title>
+
+    {% if page.styles %}
+    <!-- Page Custom styles -->
+    <style>{{ page.styles }}</style>
+    {% endif %}
+</head>
+
+<body {% if page.context %}class="{{ page.context }}"{% endif %}>
+    <header class="header">
+        <div class="content-wrap">
+            <h1 class="header_t">{{ page.title }}</h1>
+
+            {% if page.description %}
+            <h2 class="header_sub-t">{{ page.description }}</h2>
+            {% endif %}
+
+            <a href="{{ site.project-url }}" class="watch-on-github"><small class="watch-on-github_text">{{ site.en-res-watch-on-github }}</small> GitHub</a>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="content-wrap clearfix">
+            <div class="helpers_go-to-nav">
+                <a href="#sidebar">Go to navigation</a>
+            </div>
+
+            <section class="content" id="content">
+                {{ content }}
+
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                    var disqus_shortname = 'mcssen'; // required: replace example with your forum shortname
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+            </section>
+
+            <aside class="sidebar" id="sidebar">
+                <nav class="navigation">
+
+                    <div class="navigation_t">
+                        {{ site.en-res-navigation }}
+                    </div>
+
+                    <ul class="navigation_ul">
+                        <li class="navigation_i __link-to-main"><a href="{{ site.en-baseurl }}">主要</a></li>
+                        <li class="navigation_i helpers_go-to-content"><a href="#content">调到内容</a></li>
+                        <li class="navigation_i"><a href="{{ site.en-project-descr-url }}"> 关于本项目 </a></li>
+                        <li class="navigation_i"><a href="{{ site.baseurl }}/ja">日文翻译</a></li>
+                    </ul>
+
+                    <div class="navigation_t">
+                        {{ site.en-res-navigation-modules }}
+                    </div>
+
+                    <ul class="navigation_ul">
+                        <li class="navigation_i"><a href="{{ site.baseurl }}/en/modules/cssg.html">CSS-o-Gram - CSS comments syntax for describing HTML structure</a></li>
+                    </ul>
+
+                    <div class="navigation_t">
+                        {{ site.en-res-navigation-links }}
+                    </div>
+
+                    <ul class="navigation_ul">
+                        <li class="navigation_i"><a href="{{ site.baseurl }}">Оригинальная, русская версия документации</a></li>
+                    </ul>
+
+                </nav>
+
+                <div class="repo-owner">
+                    <div class="repo-owner_t">{{ site.en-res-author }}</div>
+                    <div class="repo-owner_n">
+                        {{ site.en-res-project-author }}
+                    </div>
+                    <div class="repo-owner_links">{{ site.en-res-project-author-twitter }}</div>
+                </div>
+
+                <div class="repo-owner">
+                    <div class="repo-owner_t">{{ site.en-cssg-author-title }}</div>
+                    <div class="repo-owner_n">
+                        {{ site.en-cssg-author-name }}
+                    </div>
+                </div>
+            </aside>
+
+            <footer class="footer">
+                <p>{{ site.en-res-footer }}.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id', '52543edb613f5d1fc7000020');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter18211534 = new Ya.Metrika({id:18211534,
+                        trackLinks:true,
+                        accurateTrackBounce:true});
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/18211534" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Based on GitHub Pages Architect template by <a href="http://twitter.com/jasonlong">Jason Long</a> -->
+
+</body>
+</html>
