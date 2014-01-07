@@ -206,6 +206,7 @@ The samples of standard designs can be reused from one project to another, allow
 
 <a id="2"></a>
 ## 2 layer — project
+## 2层 - 项目
 Second layer includes isolated, project modules, which further construct the page:
 第二层包含单独的,项目模块,增进页面结构
 
@@ -250,6 +251,7 @@ Example displays second layer module **.toolbar**, which uses first layer standa
 {% endhighlight %}
 
 **Project layer styles may be cascade-modified only from other project layer modules!**
+**项目层样式只能被其他项目层模块层叠修改**
 
 **This is right:**
 
@@ -264,6 +266,7 @@ This is wrong:
 {% endhighlight %}
 
 ### Advantages
+###优势
 Module isolation provides easy access to their styles, without risk of affecting other interface parts. When working in team, each team member can develop single layer separately, not getting in to conflict with other developers.
 模块分离提供了更容易去样式它们,不必冒着影响其他界面部分的风险.当团队合作时,每个小组成员可以开发单独的分隔的层, 不会和其他开发者冲突.
 
@@ -356,8 +359,9 @@ Site of the project is also designed by MCSS methodology; do not hesitate to loo
 
 <a id="dictionary"></a>
 ### Abbreviation dictionary
+### 缩写字典
 To escape large CSS selector names, we suggest using abbreviation dictionary:
-
+避免大型的 CSS 选择器名字, 我们建议使用缩写字典:
 
     a - link (<a> tag)
     ac - action
@@ -441,16 +445,22 @@ To escape large CSS selector names, we suggest using abbreviation dictionary:
     w - wrapper
 
 In future, dictionary will mo moved to separate documentation module.
+在未来, 字典会被移到单独的模块.
 
 <a id="recommendations"></a>
 ## Recommendations
+## 推荐规范
 
 ### Code style
+### 代码风格
 Along with methodology, we advise to use following useful practices to improve quality of your code:
+除了方法论, 我们建议使用下面的有用的实践来提升你代码的质量.
 
 * [Principles of writing consistent, idiomatic CSS](https://github.com/necolas/idiomatic-css)
 * [Google HTML/CSS style guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) - style guide for HTML and CSS code configuration
 * [CSScomb](http://csscomb.ru/) - tool for CSS-property sorting
 
 ### Best practices
+### 最佳实践
 * Do comment CSS as much as you can, all non-standard constructions, magical numbers — this will be useful not only to the members of your team, but for you as we'll, when you will be back to reviewing the code after couple of months.
+* 尽可能多的注解CSS,所有不标准的结构,神奇数字 - 将会很有用不仅对于你团队的成员, 也对你自己, 当你几个月后复查代码时.
