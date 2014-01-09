@@ -13,7 +13,7 @@ context: inner-page
     ac - action
     add - additional
     aft - after
-    aux - auxillary
+    aux - auxilary
 
     b - body | bottom
     bg - background
