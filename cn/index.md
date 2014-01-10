@@ -170,28 +170,21 @@ CSS 模块(和其中的组建) 被分割成不同的层, 每个层都有自己�
 标准的设计例子可以在项目之间重用,促进了布局和后端的开发者的沟通.
 
 <a id="2"></a>
-## 2 layer — project
-## 2层 - 项目
-Second layer includes isolated, project modules, which further construct the page:
-第二层包含单独的,项目模块,增进页面结构
+## 第2层 - 项目
+第二层包含单独的,项目模块,增进页面结构:
 
-* Registration form 注册表单
-* Login block 登录块
-* Shopping cart 购物车
-* and etc 其它
+* 注册表单
+* 登录块
+* 购物车
+* 其它
 
-### Rules
 ### 规则
 
-It is recommended to use as many as possible unique CSS classes in second layer layout; even if current design does not need styling, better practice is to assign unique CSS class to it. Such approach provides better availability of each separate layout block, which allows easily correct styles, without affecting HTML structure.
-建议使用尽可能多的唯一的 css 类在第二层;即使当前的设计不需要样式,更好的实践是飞陪唯一的 css 类.这样的方法使得每个分开的层块能被更好的访问到,允许更容易的纠正样式,而不影响 html 结构
+建议使用尽可能多的唯一的 css 类在第二层;即使当前的设计不需要样式,更好的实践是分配唯一的 css 类.这样的方法使得每个分开的层块能被更好的访问到,允许更容易的纠正样式,而不影响 html 结构
 
+每个模块应该尽量的独立 - 独立于界面组建, 组建只和基础层交互.
 
-Each module has to be as isolated as possible - independent interface block, which interacts with the base layer only.
-每个模块应该尽量的独立 - 独立于界面块, 只和基础层交互.
-
-To use the first layer construction in project module, we need to assign one more CSS class into HTML:
-使用第一层的结构在项目模块里, 我们需要分配另一个 css 类在 html 里.
+使用第一层的结构在项目模块里, 我们需要分配另一个 css 类在 html 里:
 
 {% highlight html %}
 <header class="toolbar">
@@ -203,7 +196,7 @@ To use the first layer construction in project module, we need to assign one mor
 </header>
 {% endhighlight %}
 
-Example displays second layer module **.toolbar**, which uses first layer standard **.umenu**. To modify standard for project needs, CSS cascade is used:
+下面的例子是第二层的模块**.toolbar**,它使用第一层的标准**.umenu**.来修改项目需要的标准, CSS 层叠样式被使用:
 
 {% highlight css %}
 /* Toolbar
@@ -215,30 +208,25 @@ Example displays second layer module **.toolbar**, which uses first layer standa
 /* /Toolbar */
 {% endhighlight %}
 
-**Project layer styles may be cascade-modified only from other project layer modules!**
-**项目层样式只能被其他项目层模块层叠修改**
+**项目层样式只能被其他项目层的模块层叠修改**
 
-**This is right:**
+**这是对的:**
 
 {% highlight css %}
 .project-module .other-project-module { }
 {% endhighlight %}
 
-This is wrong:
+这是错的:
 
 {% highlight css %}
 .base-module .project-module { }
 {% endhighlight %}
 
-### Advantages
 ###优势
-Module isolation provides easy access to their styles, without risk of affecting other interface parts. When working in team, each team member can develop single layer separately, not getting in to conflict with other developers.
-模块分离提供了更容易去样式它们,不必冒着影响其他界面部分的风险.当团队合作时,每个小组成员可以开发单独的分隔的层, 不会和其他开发者冲突.
+模块的分离使得修改它们的样式更容易,不必冒着影响其他界面部分的风险.当团队合作时,每个小组成员可以开发单独的分隔的层, 不会和其他开发者冲突.
 
-Styles of each module may be applied only to those pages, where they are needed.
 每个模块的样式可以只被应用于他们需要的页面.
 
-When functionality is disappearing from the website, it is easy to get rid of unnecessary styles - all that is required is to throw out one module with corresponding styles.
 当网站的功能不需要时,很容易放弃不必要的样式 - 所需要做的就是扔掉一个模块和相应的样式.
 
 <a id="3"></a>
