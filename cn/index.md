@@ -6,25 +6,20 @@ description: Multilayer CSS
 
 ## 简介
 
-Multilayer CSS organization methodology is a guideline to structure your CSS.
-多层 CSS 组织方法论是你构造 CSS 的指导手册.
+多层 CSS 组织方法是你构造 CSS 的指导手册.
 
-Core methodology principles are based on [BEM]((http://bem.info/)) and [OOCSS](http://oocss.org/) ideas. MCSS was invented in [Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki) (Top 10 world social network) developers team and is recommended for other developers as core for own documentation and team based methodologies.
-核心方法论的原则基于[BEM](http://bem.info/)和[OOCSS](http://oocss.org/)的想法.MCSS 是由[Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki)(全球十大顶级社交网络)的开发团队发明的,并且推荐其他开发者作为自己和团队的基本方法论.
+核心方法的原则基于[BEM](http://bem.info/)和[OOCSS](http://oocss.org/)的想法.MCSS 是由[Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki)(全球十大顶级社交网络)的开发团队发明的,并且推荐其他开发者作为自己和团队的基本方法.
 
-Despite the fact that this methodology originated in a large project with more than 60 developers and many inner services it can easily be used for small and medium sized projects as well. Its scalability gives developers an opportunity to chose the level of strictness of selected rules.
-无论是一个超过60个开发者参与的大型项目和很多内部服务,它也能被用于中小型项目.它的可扩展性给了开发者选择规则的严格程度.
+无论是一个超过60个开发者参与的有很多内部服务的大型项目,还是中小型的项目.它都能胜任,它的可扩展性给了开发者选择规则的严格程度.
 
-Documentation is still being constantly improved, along with secondary tools, such as front-end documentation engine [Source](http://sourcejs.com). Originally documentation was written in russian and not all information is translated yet, but in upcoming updates all contents will be translated and main project language will be changed to english.
-文档还在持续改进,和一些代理工具一起,比如前端文档引擎[Source](http://sourcejs.com). 原始的文档是用俄语写的,不是所有的内容都被翻译了,但是即将来临的更新会翻译所有的内容并且主要项目语言会变成英文.
+文档还在持续改进,和一些从属工具一起,比如前端文档引擎[Source](http://sourcejs.com). 原始的文档是用俄语写的,不是所有的内容都被翻译了,但是即将来临的更新会翻译所有的内容并且主要项目语言会变成英文.
 
-*Please don't hesitate to leave your questions in [Issues section on Github](http://github.com/operatino/MCSS/issues) or leaving comments below.*
 *有问题就在[Github 的 Issues](http://github.com/operatino/MCSS/issues) 或者 下面的评论框留言, 不要犹豫.*
 
-### Fast navigation
+### 快速导航
 
-* [Main principles](#main)
-* [Style storing rules](#style-storing)
+* [主要原则](#main)
+* [样式存放规则](#style-storing)
 * [Module interaction scheme](#interaction)
 * [1 layer — base](#1)
 * [2 layer — project](#2)
@@ -37,18 +32,14 @@ Documentation is still being constantly improved, along with secondary tools, su
 <a id="main"></a>
 ### 主要原则
 
-**MCSS** methodology is very scalable and does not force using specific code style, file system organization or specialized tools to work with it. The main thing is about separating rules for different blocks.
-**MCSS** 的方法论是非常灵活的并且不需要强制使用特定的编码风格, 文件系统组织或者特定的工具才能工作.主要的事情就是分割规则到不同的块.
-
-CSS modules (and blocks in them) are separated in to layers, where each layer has its own rules for exploitation and interaction with other layer modules.
-CSS 模块(和里面的块) 被分割成层, 每个层都有自己的规则去利用和交互别的层.
+**MCSS** 的理论是非常灵活的并且不需要强制使用特定的编码风格, 文件系统组织或者特定的工具才能工作.最主要的就是分割规则到不同的块.
+CSS 模块(和其中的组建) 被分割成不同的层, 每个层都有自己的规则去利用和交互别的层.
 
 ![image]({{ site.baseurl }}/images/modules.jpg)
 
 <a id="style-storing"></a>
 ### 样式存放规则
-All styles of specific modules must be placed in separate section or CSS file:
-所有的特定模块的样式必须被放在被分离的部分或者 css 文件:
+所有的特定模块的样式必须被放在独立的部分或者不同的 css 文件中:
 
 {% highlight css %}
 /* Module name
@@ -60,8 +51,7 @@ All styles of specific modules must be placed in separate section or CSS file:
 /* /Module name */
 {% endhighlight %}
 
-Modified selector with cascade, also are stored near other parent selectors:
-层叠的修饰选择器也要被放在靠近父级选择器的附近:
+层叠的修饰选择器也要被放在靠近父级选择器的地方:
 
 {% highlight css %}
 /* Module name
@@ -72,8 +62,7 @@ Modified selector with cascade, also are stored near other parent selectors:
     .module_list .other-module { }
 /* /Module name */
 {% endhighlight %}
-
-The only exception is the **context layer:**
+    
 唯一的例外是 **上下文层**
 
 {% highlight css %}
@@ -87,7 +76,6 @@ The only exception is the **context layer:**
 /* /Module name */
 {% endhighlight %}
 
-This part of documentation will be moved to separate document module and will be described more accurate (already available in [russian]({{ site.baseurl }}/modules/css_placement.html)).
 这部分文档会被一到单独的文档模块并且被更精确的描述([俄文版]({{ site.baseurl }}/modules/css_placement.html)的已经有了)
 
 ## Zero layer or Foundation
