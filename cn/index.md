@@ -78,25 +78,19 @@ CSS 模块(和其中的组建) 被分割成不同的层, 每个层都有自己�
 
 这部分文档会被一到单独的文档模块并且被更精确的描述([俄文版]({{ site.baseurl }}/modules/css_placement.html)的已经有了)
 
-## Zero layer or Foundation
-## 第0层或者地基
-Foundation includes resets and insignificantly changeable styles, which describe main layout base and apply on all pages.
+## 第0层或地基
 地基包含了重置和无关紧要的可变的样式,描述了主要的基本布局并且应用与所有页面.
 
-Foundation styles like all resets are connected from the very start, either in separate file or in the beginning of common CSS file:
-基础样式就像所有的重置一样,都在开头的单独文件或者 common 的 CSS 文件头部:
+基础样式就像所有的重置一样,都在最顶端的单独文件或者 common CSS 文件头部:
 
 <a id="interaction"></a>
-## Module interaction scheme
-## 模块交互方案
+## 模块交互结构
 
 ![image]({{ site.baseurl }}/images/layers.jpg)
 
-### Style linking order
 ### 样式链接顺序
 
-Every layer styles must be linked to the page in right order to maintain right relations between selectors of different modules/layers:
-每一个层样式必须被页面以正确的顺序被连接来保持正确的关系在不同的模块/层的选择器中:
+每一个层的样式必须被页面以正确的顺序被链接来保持在不同的模块/层的选择器中的正确的关系:
 
 	0_layer_foundation
 		reset.css
@@ -110,87 +104,70 @@ Every layer styles must be linked to the page in right order to maintain right r
 	cosmetic.css
 
 <a id="1"></a>
-## 1 layer — base
-## 1 层 - 基础
-First layer - is a website framework, the core part of interface. It is based on most reusable and abstract constructions:
-第一层 - 是一个网站框架, 界面的核心部分.它是基础的在大多数可重用的和抽象的构造.
+## 第1层 - 基础
+第一层 - 是一个网站框架, 界面的核心部分.它是基于可重用的和抽象的构造之上的.
 
-* forms 表单
-* buttons 按钮
-* navigation blocks 导航块
-* and etc 其它
-
-Base layer styles must be integrated with designers style guides as close as possible. As modules of first layer are meant to be reused across all website interfaces, they must look appropriate and fit to other interface parts without modification.
+* 表单
+* 按钮
+* 导航块
+* 其它
 
 基础层样式必须尽量和设计师的样式指导相整合.因为第一层的模块意味着要贯穿整个网站的界面,它们必须在不修改的情况下和其他界面显得和谐.
 
-**Starting to use MCSS in your project, the first thing you should do - is creating a set of reusable standards.**
-**开始使用 MCSS 在你的项目中, 第一件事你应该做的 - 是创建一系列可服用的标准.**
+**开始在你的项目中使用 MCSS, 第一件事你应该做的 - 是创建一系列可复用的标准.**
 
-You can easily reuse popular frameworks such as [Bootstrap](http://twitter.github.com/bootstrap/), [960gs](http://960.gs/), [inuit.css](https://github.com/csswizardry/inuit.css) and others as part of the first layer.
-你可以很容易的使用流行的框架比如[Bootstrap](http://twitter.github.com/bootstrap/), [960gs](http://960.gs/), [inuit.css](https://github.com/csswizardry/inuit.css) 和其他来作为第一层的一部分.
+你可以很容易的使用流行的框架比如[Bootstrap](http://twitter.github.com/bootstrap/), [960gs](http://960.gs/), [inuit.css](https://github.com/csswizardry/inuit.css) 或其它框架来作为第一层的一部分.
 
-### Rules
 ### 规则
 
-First layer fundamental rule - all entities should be abstract, both with their names and mark-up.
+第一层基础规则 - 所有的存在都应该是抽象的,包括它们的名字和标记容器.
 
-第一层基础规则 - 所有的存在都应该是抽象的,包括它们的名字和mark-up
+* 类名不应该在界面的任何地方看上去"不协调".
+* 模块应该有默认的样式,但是也可以根据不同的项目模块和任务被容易的修改.
 
-* Class names should not look "foreign" in any place on the interface.
-* Module blocks should have default style, but also should be easy to modify according to various project modules and tasks.
+第一层的样式可以被同一层的其他模块或者第二层层叠修改.因为一个规则:相关的样式只出现在一个地方.
 
-* 类名不应该看上去"不协调"在界面的任何地方.
-* 模块应该有默认的样式,但是也可以被容易的修改根据不通的项目模块和任务.
-
-First layer styles could be cascade-modified from other modules of the same layer and 2nd layer. This is due to the Rule regarding location of related styles in one place.
-第一层的样式可以被层叠修改从同一层的其他模块或者第二层.因为一个规则:regarding location of related styles in one place.
-
-**Base styles should be separated from 2nd layer modules and stay independent from project layer styles.**
 **基础样式应该从第二层模块中分割出来并且保持项目层样式的独立性**
 
-Forms standard:
+标准表单:
 
 {% highlight css %}
 .input-field { }
     .input-field_text { }
 {% endhighlight %}
 
-Form standard interaction with button standard - cascade modification from 1st layer:
+标准表单和标准按钮交互 - 从第一层层叠样式:
 
 {% highlight css %}
 .input-field { }
     .input-field .button { }
 {% endhighlight %}
 
-Project module interaction with the standard in the 2nd layer:
+项目模块和和标准交互在第二层:
 
 {% highlight css %}
 .project-module { }
     .project-module .input-field { }
 {% endhighlight %}
 
-**2 layer modification from the 1st one is forbidden!** In this case, layers are mixing up, causing chaos:
+**第二层从第一层修改是被禁止的!** 在这个例子中, 不同的层混合了, 造成了混乱: 
 
 {% highlight css %}
     .input-field .project-module { }
 {% endhighlight %}
 
-Base styles are connected right after the foundation, prior to 2nd layer, to support low level priority in selector weight.
+基础样式是正确的被链接的在地址之后,优先于第二层,来支持底层的选择器权重优先.
 
 ### Advantages
 ### 优势
-Reusable and well thought-of first layer modules allow saving time on support of popular constructions, eliminating the need to maintain several similar modules.
-重用和好的思考出的第一层模块允许节省时间在支持流行结构,减少维持多个相似的模块.
 
-Re-usability also as well affects the final size of CSS-files and page rendering time.
+重用性和受到好评的第一层模块允许节省时间在支持流行结构,减少维护多个相似的模块.
+
 重用性也会影响 css 文件的最终尺寸和页面加载时间.
 
-Having well-developed base allows to create new interfaces easily, most of which consist of standard elements.
-有了高大上的基础允许容易创建界面,大多数标准元素的组合.
+有了完善的基础允许容易创建界面,大多数标准元素的组合.
 
-The samples of standard designs can be reused from one project to another, allowing accelerating the development both of the layout and backend functionality connected with it.
-标准的设计例子可以在项目之间重用,促进了布局和后端的连接.
+标准的设计例子可以在项目之间重用,促进了布局和后端的开发者的沟通.
 
 <a id="2"></a>
 ## 2 layer — project
