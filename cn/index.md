@@ -230,55 +230,45 @@ CSS 模块(和其中的组建) 被分割成不同的层, 每个层都有自己�
 当网站的功能不需要时,很容易放弃不必要的样式 - 所需要做的就是扔掉一个模块和相应的样式.
 
 <a id="3"></a>
-## 3 layer — cosmetic
+## 第三层 - 门面层
 
-Third layer consists of simple, slightly affecting styles:
-第三层由简单的轻微的影响样式组成:
+第三层由简单轻微的影响样式组成:
 
-* links colors 超链接颜色
+* 超链接颜色
 * low-level OOCSS - two properties for CSS class (.font-size_XL, .margin-t_L)
-* 低层次的 OOCSS - 二属性
-* global modifiers 全局修饰
+* 全局修饰
 
-Layer can be nonexistent in some cases of methodology usage, but in big projects, this layer allows to solve the duplicate styling issue and to describe rare, non-project conditions, going 'DRY'.
-这一层可以不存在在一些方法论用例中, 但是在大型项目中, 这一层允许解决重复的样式问题并且描述罕见的没有项目的情况,更加'DRY'
+这一层在一些情形中可以不存在, 但是在大型项目中, 这一层允许解决重复的样式问题并且在罕见的没有项目层的情况下,更加'DRY'
 
-### Rules
-Third layer styles should be organized in a way to keep layout safe when styles are being discarded. Losses should be minor e.g. colors, paddings, etc.
+### 规则
 第三层样式应该被组织成保持层安全,当被丢弃时.损失应该是最小的,比如 颜色 内边距等等.
 
-It is allowed to use some of simple OOCSS classes, two classes for block maximum, for rare, non-project situations:
-允许使用一些简单的OOCSS 类,
+允许使用一些简单的OOCSS 类,在没有项目层的情况下:
 
 {% highlight html %}
 <div class="font-size_XL margin-t_L color_red"></div>
 {% endhighlight %}
 
-**Cosmetic layer styles cannot be modified with cascade from other layers, except the context selectors.**
 **装饰层样式不能被其他层的层叠样式修改,除了上下文选择器**
 
-Cosmetic styles are applied at the end of CSS. It is not recommended to use **!important**.
 装饰层样式被放在 CSS 的尾部.不推荐使用 **!important**
 
-### Advantages
-Styles doesn't have major effect to website layout, however helps dealing with duplicate code issue and eliminating the need to produce small project and base modules.
+### 优势
 样式对网站布局没有大的影响,帮助处理重复代码的问题并且减少生产小项目和基础模块的生产.
 
 Simple selectors allow to quickly deal with rare situations, when we need to apply a couple of properties for non-project module.
-简单选择器允许快速处理少数情境, 当我们需要应用一些属性到没有项目模块的情境时.
+简单选择器允许快速处理少数情况, 当我们需要应用一些属性到没有项目模块时.
 
 <a id="context"></a>
-## Context
-This layer includes styles of high context and @media-rules that can be used for changing standard styles for features of different context:
-这层包含了高层的上下文和媒体规则可以改变标准的样式为了未来的不同上下文:
+## 上下文
+这层包含了高层的上下文和媒体规则,用来改变未来的不同上下文的标准样式:
 
-* .ie8, .ie9 - browsers 浏览器
-* .touch 触摸
-* .logged-in 登录 
-* media-queries 媒体查询
+* .ie8, .ie9 - 浏览器
+* .触摸
+* .已登录 
+* 媒体查询
 
-**Context layer is an exception in style location rules.** Styles of this layer are being distributed between all layers, which are being cascade-modified from context:
-**上下文层在样式位置上是个例外** 这一层的样式分布在所有的层忠,可以根据上下文层叠修饰:
+**上下文层在样式位置上是个例外** 这一层的样式分布在所有的层中,可以根据上下文层叠修饰:
 
 {% highlight css %}
 /* Module name
@@ -296,25 +286,19 @@ This layer includes styles of high context and @media-rules that can be used for
 {% endhighlight %}
 
 <a id="examples"></a>
-## Real life examples
-## 现实生活中的例子
+## 现实中的例子
 
-You can check MCSS in action in this [demo]({{ site.baseurl }}/examples/layers/). In the following example, all layers are stored in one [CSS file]({{ site.baseurl }}/examples/layers/css/style.css), but they could be also separated to individual files (blocks):
-你可以检出 MCSS 实战在这里[demo]({{ site.baseurl }}/examples/layers/).在下面的例子中,所有的层都被储存在一个[CSS 文件]({{ site.baseurl }}/examples/layers/css/style.css), 但是它们可以被分割在单独的文件(块)中:
+你可以在这里检出 MCSS 实战[demo]({{ site.baseurl }}/examples/layers/).在下面的例子中,所有的层都被储存在一个[CSS 文件]({{ site.baseurl }}/examples/layers/css/style.css), 但是它们可以被分割在单独的文件(块)中:
 
 ![image]({{ site.baseurl }}/images/file-system.png)
 
-In second [demo]({{ site.baseurl }}/examples/mcss_with_bootstrap/), you can see how MCSS works with Bootstrap, as first (base) layer.
 在第二个[demo]({{ site.baseurl }}/examples/mcss_with_bootstrap/), 你会看到 MCSS 如何和 Bootstrap 一起工作, 作为第一层(基础)层.
 
-Site of the project is also designed by MCSS methodology; do not hesitate to look at the [source]({{ site.baseurl }}/theme/stylesheets/stylesheet.css).
 本站也是基于 MCSS 理论来设计的, 快看看 [源码]({{ site.baseurl }}/theme/stylesheets/stylesheet.css).
 
 <a id="dictionary"></a>
-### Abbreviation dictionary
 ### 缩写字典
-To escape large CSS selector names, we suggest using abbreviation dictionary:
-避免大型的 CSS 选择器名字, 我们建议使用缩写字典:
+为了避免大型的 CSS 选择器名字, 我们建议使用缩写字典:
 
     a - link (<a> tag)
     ac - action
@@ -397,23 +381,17 @@ To escape large CSS selector names, we suggest using abbreviation dictionary:
 
     w - wrapper
 
-In future, dictionary will mo moved to separate documentation module.
 在未来, 字典会被移到单独的模块.
 
 <a id="recommendations"></a>
-## Recommendations
 ## 推荐规范
 
-### Code style
 ### 代码风格
-Along with methodology, we advise to use following useful practices to improve quality of your code:
 除了方法论, 我们建议使用下面的有用的实践来提升你代码的质量.
 
 * [Principles of writing consistent, idiomatic CSS](https://github.com/necolas/idiomatic-css)
 * [Google HTML/CSS style guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) - style guide for HTML and CSS code configuration
 * [CSScomb](http://csscomb.ru/) - tool for CSS-property sorting
 
-### Best practices
 ### 最佳实践
-* Do comment CSS as much as you can, all non-standard constructions, magical numbers — this will be useful not only to the members of your team, but for you as we'll, when you will be back to reviewing the code after couple of months.
-* 尽可能多的注解CSS,所有不标准的结构,神奇数字 - 将会很有用不仅对于你团队的成员, 也对你自己, 当你几个月后复查代码时.
+* 尽可能多的注解CSS,在所有不标准的结构和神奇的数字 - 将会很有用,不仅对于你团队的成员, 也对你自己, 当你几个月后复查代码时.
