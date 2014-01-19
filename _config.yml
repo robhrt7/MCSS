@@ -27,7 +27,6 @@ en-baseurl: /MCSS/en
 
 en-project-url: http://github.com/operatino/MCSS/en
 en-project-descr-url: http://github.com/operatino/MCSS/blob/gh-pages/en/README.md
-cn-project-descr-url: http://github.com/operatino/MCSS/blob/gh-pages/cn/README.md
 
 en-cssg-author-title: Css-o-Gram
 en-cssg-author-name: <a href="mailto:eugeny.horoshilov@odnoklassniki.ru">Evgeny Khoroshilov</a>
@@ -64,3 +63,24 @@ ja-res-author: Project author
 ja-res-navigation: ナビゲーション
 ja-res-navigation-modules: ドキュメントモジュール
 ja-res-navigation-links: リンク
+
+
+cn-baseurl: /MCSS/cn
+
+cn-project-url: http://github.com/operatino/MCSS/cn
+cn-project-descr-url: http://github.com/operatino/MCSS/blob/gh-pages/cn/README.md
+
+cn-cssg-author-title: Css-o-Gram
+cn-cssg-author-name: <a href="mailto:eugeny.horoshilov@odnoklassniki.ru">Evgeny Khoroshilov</a>
+
+cn-res-project-author: <a href="http://rhr.me">Robert Haritonov</a>
+cn-res-project-author-twitter: <a href="http://twitter.com/operatino_en">@operatino</a>
+
+cn-res-watch-on-github: Checkout project at
+cn-res-download-archive: Download archive
+cn-res-footer: This site is published through <a href="http://pages.github.com">GitHub Pages</a> based on <a href="http://jekyllrb.com">Jekyll</a>
+cn-res-author: Project author
+
+cn-res-navigation: 导航
+cn-res-navigation-modules: 文档模块
+cn-res-navigation-links: 链接
