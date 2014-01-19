@@ -20,14 +20,14 @@ description: Multilayer CSS
 
 * [主要原则](#main)
 * [样式存放规则](#style-storing)
-* [Module interaction scheme](#interaction)
-* [1 layer — base](#1)
-* [2 layer — project](#2)
-* [3 layer — cosmetic](#3)
-* [Context](#context)
-* [Real life examples](#examples)
-* [Abbreviation dictionary](#dictionary)
-* [Recommendations](#recommendations)
+* [模块交互结构](#interaction)
+* [1 层 — 基础](#1)
+* [2 层 — 项目](#2)
+* [3 层 — 修饰](#3)
+* [上下文](#context)
+* [真实的例子](#examples)
+* [缩写字典](#dictionary)
+* [推荐规范](#recommendations)
 
 <a id="main"></a>
 ### 主要原则
@@ -158,7 +158,6 @@ CSS 模块(和其中的组建) 被分割成不同的层, 每个层都有自己�
 
 基础样式是正确的被链接的在地址之后,优先于第二层,来支持底层的选择器权重优先.
 
-### Advantages
 ### 优势
 
 重用性和受到好评的第一层模块允许节省时间在支持流行结构,减少维护多个相似的模块.
@@ -235,7 +234,7 @@ CSS 模块(和其中的组建) 被分割成不同的层, 每个层都有自己�
 第三层由简单轻微的影响样式组成:
 
 * 超链接颜色
-* low-level OOCSS - two properties for CSS class (.font-size_XL, .margin-t_L)
+* 低层次的OOCSS - 两个属性的CSS类 (.font-size_XL, .margin-t_L)
 * 全局修饰
 
 这一层在一些情形中可以不存在, 但是在大型项目中, 这一层允许解决重复的样式问题并且在罕见的没有项目层的情况下,更加'DRY'
@@ -256,7 +255,6 @@ CSS 模块(和其中的组建) 被分割成不同的层, 每个层都有自己�
 ### 优势
 样式对网站布局没有大的影响,帮助处理重复代码的问题并且减少生产小项目和基础模块的生产.
 
-Simple selectors allow to quickly deal with rare situations, when we need to apply a couple of properties for non-project module.
 简单选择器允许快速处理少数情况, 当我们需要应用一些属性到没有项目模块时.
 
 <a id="context"></a>
