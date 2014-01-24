@@ -252,6 +252,8 @@ Basic [English]({{ site.baseurl }}/en) and [Japanese]({{ site.baseurl }}/ja) tra
 
 Сайт проекта тоже сверстан по методологии MCSS, не стесняйтесь [заглянуть в исходники]({{ site.baseurl }}/theme/stylesheets/stylesheet.css).
 
+**Более комплексный пример использования методологии в действии, с видео записью процесса разработки можно найти [тут](https://github.com/operatino/markup-process).**
+
 <a id="recommendations"></a>
 ## Рекомендации
 

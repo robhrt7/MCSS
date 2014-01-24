@@ -293,6 +293,8 @@ In second [demo]({{ site.baseurl }}/examples/mcss_with_bootstrap/), you can see 
 
 Site of the project is also designed by MCSS methodology; do not hesitate to look at the [source]({{ site.baseurl }}/theme/stylesheets/stylesheet.css).
 
+**[Here](https://github.com/operatino/markup-process) you can find more complex example of MCSS methodology usage with video recording of development process.**
+
 <a id="dictionary"></a>
 ### Abbreviation dictionary
 To escape large CSS selector names, we suggest using abbreviation dictionary:

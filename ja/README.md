@@ -11,6 +11,9 @@ Big respect to [Matori](http://github.com/Matori) for Japanese translation.
 
 *何か質問があれば[Issues section on Github](http://github.com/operatino/MCSS/issues)またはメールアドレス<r@rhr.me>まで。*
 
+## Updates
+* 24.01.14. Adding [complex example](https://github.com/operatino/markup-process) of MCSS methodology usage with video recording of development process. MCSS is available in russian, english, japanese and chinese.
+
 ## これからのMCSS
 * 多言語化
 * ドキュメントを独立したモジュールごとに分割（ロシア語バージョンでは完了しています）
