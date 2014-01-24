@@ -12,7 +12,7 @@ Documentation is still being constantly improved, along with secondary tools, su
 *Please don't hesitate to leave your questions in [Issues section on Github](http://github.com/operatino/MCSS/issues).*
 
 ## Updates
-* 24.01.14. Adding [complex example](https://github.com/operatino/markup-process) of MCSS methodology usage with video recording of development process. MCSS is available in russian, english, japanese and chinese.
+* 24.01.14. Adding [complex example](https://github.com/operatino/markup-process) of MCSS methodology usage with video recording of development process. MCSS is available in Russian, English, Japanese and Chinese.
 
 ## Future of MCSS
 * Internationalization

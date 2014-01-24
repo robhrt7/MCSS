@@ -1,4 +1,4 @@
-# 多层 CSS
+# Multilayer CSS
 
 多层 CSS 组织方法是你构造 CSS 的指导手册.
 
@@ -10,6 +10,9 @@ ___
 文档还在持续改进,和一些从属工具一起,比如前端文档引擎[Source](http://sourcejs.com). 原始的文档是用俄语写的,不是所有的内容都被翻译了,但是即将来临的更新会翻译所有的内容并且主要项目语言会变成英文.
 
 *有问题就在[Github 的 Issues](http://github.com/operatino/MCSS/issues) 或者 下面的评论框留言, 不要犹豫.*
+
+## Updates
+* 24.01.14. Adding [complex example](https://github.com/operatino/markup-process) of MCSS methodology usage with video recording of development process. MCSS is available in Russian, English, Japanese and Chinese.
 
 ##MCSS 的特性
 * 国际化

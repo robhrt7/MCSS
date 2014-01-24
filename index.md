@@ -4,7 +4,7 @@ title: MCSS
 description: Многослойная система организации CSS
 ---
 
-Basic [English]({{ site.baseurl }}/en) and [Japanese]({{ site.baseurl }}/ja) translation
+Basic [English]({{ site.baseurl }}/en), [Chinese]({{ site.baseurl }}/cn) and [Japanese]({{ site.baseurl }}/ja) translation
 
 ## Введение
 Многослойная система организации CSS основана на принципах [OOCSS](http://oocss.org/) и [БЭМ](http://bem.info/). Методология родилась и развивается в команде разработчиков [OK.ru](http://corp.mail.ru/communications/odnoklassniki) и рекомендуется к использованию как основа для собственного свода правил и документаций.

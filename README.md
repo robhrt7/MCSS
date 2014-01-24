@@ -1,4 +1,4 @@
-[English README](http://github.com/operatino/MCSS/blob/gh-pages/en/README.md) | [Japanese README](http://github.com/operatino/MCSS/blob/gh-pages/ja/README.md)
+[English README](http://github.com/operatino/MCSS/blob/gh-pages/en/README.md) | [Chinese README](http://github.com/operatino/MCSS/blob/gh-pages/cn/README.md) | [Japanese README](http://github.com/operatino/MCSS/blob/gh-pages/ja/README.md)
 
 # Многослойный CSS
 
