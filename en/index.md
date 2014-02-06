@@ -8,7 +8,7 @@ description: Multilayer CSS
 
 Multilayer CSS organization methodology is a guideline to structure your CSS.
 
-Core methodology principles are based on [BEM]((http://bem.info/)) and [OOCSS](http://oocss.org/) ideas. MCSS was invented in [Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki) (Top 10 world social network) developers team and is recommended for other developers as core for own documentation and team based methodologies.
+Core methodology principles are based on [BEM](http://bem.info/) and [OOCSS](http://oocss.org/) ideas. MCSS was invented in [Odnoklassniki.ru](http://corp.mail.ru/en/communications/odnoklassniki) (Top 10 world social network) developers team and is recommended for other developers as core for own documentation and team based methodologies.
 
 Despite the fact that this methodology originated in a large project with more than 60 developers and many inner services it can easily be used for small and medium sized projects as well. Its scalability gives developers an opportunity to chose the level of strictness of selected rules.
 
