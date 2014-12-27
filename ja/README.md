@@ -18,7 +18,7 @@ Big respect to [Matori](http://github.com/Matori) for Japanese translation.
 * 多言語化
 * ドキュメントを独立したモジュールごとに分割（ロシア語バージョンでは完了しています）
 
-お楽しみに。[@operatino_en](http://twitter.com/operatino_en)でアップデートをフォローしましょう。
+お楽しみに。[@operatino](http://twitter.com/operatino)でアップデートをフォローしましょう。
 
 ## ソース
 

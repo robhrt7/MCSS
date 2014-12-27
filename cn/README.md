@@ -20,7 +20,7 @@ Big respect to [MaLucheng](http://github.com/teddy-ma) for Chinese translation.
 * 国际化
 * 文档分布在独立的模块中(俄文版已经是了)
 
-敬请期待, 在 twitter 上关注 [@operatino_en](http://twitter.com/operatino_en)
+敬请期待, 在 twitter 上关注 [@operatino](http://twitter.com/operatino)
 
 ## 源码
 

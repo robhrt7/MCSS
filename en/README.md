@@ -18,7 +18,7 @@ Documentation is still being constantly improved, along with secondary tools, su
 * Internationalization
 * Documentation separation to independent modules (already in russian version)
 
-Stay tuned, and follow updates on [@operatino_en](http://twitter.com/operatino_en)
+Stay tuned, and follow updates on [@operatino](http://twitter.com/operatino)
 
 ## Sources
 
