@@ -7,8 +7,9 @@ project-name: MCSS
 project-url: http://github.com/operatino/MCSS
 project-descr-url: http://github.com/operatino/MCSS#%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B9%D0%BD%D1%8B%D0%B9-css
 
-cssg-author-title: Css-o-Gram
-cssg-author-name: <a href="mailto:eugeny.horoshilov@odnoklassniki.ru">Евгений Хорошилов</a>
+cssg-title: Css-o-Gram (CSSG)
+cssg-author: <a href="http://github.com/XOP">Евгений Хорошилов</a>
+cssg-url: http://cssg.rocks
 
 res-project-author: <a href="http://rhr.me">Роберт Харитонов</a>
 res-project-author-twitter: <a href="http://twitter.com/operatino">@operatino</a>
@@ -28,8 +29,9 @@ en-baseurl: /MCSS/en
 en-project-url: http://github.com/operatino/MCSS/en
 en-project-descr-url: http://github.com/operatino/MCSS/blob/gh-pages/en/README.md
 
-en-cssg-author-title: Css-o-Gram
-en-cssg-author-name: <a href="mailto:eugeny.horoshilov@odnoklassniki.ru">Evgeny Khoroshilov</a>
+en-cssg-title: Css-o-Gram (CSSG)
+en-cssg-author: <a href="http://github.com/XOP">Evgeny Khoroshilov</a>
+en-cssg-url: http://cssg.rocks
 
 en-res-project-author: <a href="http://rhr.me">Robert Haritonov</a>
 en-res-project-author-twitter: <a href="http://twitter.com/operatino">@operatino</a>
@@ -49,8 +51,9 @@ ja-baseurl: /MCSS/ja
 ja-project-url: http://github.com/operatino/MCSS/ja
 ja-project-descr-url: http://github.com/operatino/MCSS/blob/gh-pages/ja/README.md
 
-ja-cssg-author-title: Css-o-Gram
-ja-cssg-author-name: <a href="mailto:eugeny.horoshilov@odnoklassniki.ru">Evgeny Khoroshilov</a>
+ja-cssg-title: Css-o-Gram (CSSG)
+ja-cssg-author: <a href="http://github.com/XOP">Evgeny Khoroshilov</a>
+ja-cssg-url: http://cssg.rocks
 
 ja-res-project-author: <a href="http://rhr.me">Robert Haritonov</a>
 ja-res-project-author-twitter: <a href="http://twitter.com/operatino">@operatino</a>
@@ -70,8 +73,9 @@ cn-baseurl: /MCSS/cn
 cn-project-url: http://github.com/operatino/MCSS/cn
 cn-project-descr-url: http://github.com/operatino/MCSS/blob/gh-pages/cn/README.md
 
-cn-cssg-author-title: Css-o-Gram
-cn-cssg-author-name: <a href="mailto:eugeny.horoshilov@odnoklassniki.ru">Evgeny Khoroshilov</a>
+cn-cssg-title: Css-o-Gram (CSSG)
+cn-cssg-author: <a href="http://github.com/XOP">Evgeny Khoroshilov</a>
+cn-cssg-url: http://cssg.rocks
 
 cn-res-project-author: <a href="http://rhr.me">Robert Haritonov</a>
 cn-res-project-author-twitter: <a href="http://twitter.com/operatino">@operatino</a>
