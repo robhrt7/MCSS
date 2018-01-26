@@ -262,7 +262,7 @@ Basic [English]({{ site.baseurl }}/en), [Chinese]({{ site.baseurl }}/cn) and [Ja
 
 * [Idiomatic CSS](https://github.com/necolas/idiomatic-css/tree/master/translations/ru-RU) - принципы написания однородного CSS-кода
 * [Google HTML/CSS style guide](http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml) - стайл-гайд по оформлению HTML и CSS кода
-* [CSScomb](http://csscomb.ru/) - инструмент для сортировки CSS-свойств в рамках селектора
+* [CSScomb](http://csscomb.com) - инструмент для сортировки CSS-свойств в рамках селектора
 
 ### Best practises
 * Как можно больше комментируйте CSS, любые нестандартные свойства, конструкции, магические числа — это пригодится не только членам вашей команды, но и вам, когда вы через пару месяцев вернётесь к коду (правила комментирования кода, скоро в отдельном модуле MCSS)
