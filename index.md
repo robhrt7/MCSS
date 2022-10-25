@@ -15,7 +15,7 @@ Basic [English]({{ site.baseurl }}/en), [Chinese]({{ site.baseurl }}/cn) and [Ja
 
 **Корневые правила методологии описаны на этой странице, для более глубокого ознакомления советуем посмотреть [видео запись презентации](http://tohtml.it/post/43785238499/mcss-video) методологии и почитать подробней об отдельных правилах можно в [модулях документации]({{ site.baseurl }}/modules/README.html).**
 
-*Всегда будем рады ответить на ваши вопросы в разделе [Issues на Github](https://github.com/operatino/MCSS/issues) или в комментариях на страницах сайта проекта.*
+*Всегда будем рады ответить на ваши вопросы в разделе [Issues на Github](https://github.com/therobhrt/MCSS/issues) или в комментариях на страницах сайта проекта.*
 
 ### Быстрая навигация
 
@@ -252,7 +252,7 @@ Basic [English]({{ site.baseurl }}/en), [Chinese]({{ site.baseurl }}/cn) and [Ja
 
 Сайт проекта тоже сверстан по методологии MCSS, не стесняйтесь [заглянуть в исходники]({{ site.baseurl }}/theme/stylesheets/stylesheet.css).
 
-**Более комплексный пример использования методологии в действии, с видео записью процесса разработки можно найти [тут](https://github.com/operatino/markup-process).**
+**Более комплексный пример использования методологии в действии, с видео записью процесса разработки можно найти [тут](https://github.com/therobhrt/markup-process).**
 
 <a id="recommendations"></a>
 ## Рекомендации

@@ -14,7 +14,7 @@ Despite the fact that this methodology originated in a large project with more t
 
 Documentation is still being constantly improved, along with secondary tools, such as front-end documentation engine [Source](http://sourcejs.com). Originally documentation was written in russian and not all information is translated yet, but in upcoming updates all contents will be translated and main project language will be changed to english.
 
-*Please don't hesitate to leave your questions in [Issues section on Github](http://github.com/operatino/MCSS/issues) or leaving comments below.*
+*Please don't hesitate to leave your questions in [Issues section on Github](http://github.com/therobhrt/MCSS/issues) or leaving comments below.*
 
 ### Fast navigation
 
@@ -293,7 +293,7 @@ In second [demo]({{ site.baseurl }}/examples/mcss_with_bootstrap/), you can see 
 
 Site of the project is also designed by MCSS methodology; do not hesitate to look at the [source]({{ site.baseurl }}/theme/stylesheets/stylesheet.css).
 
-**[Here](https://github.com/operatino/markup-process) you can find more complex example of MCSS methodology usage with video recording of development process.**
+**[Here](https://github.com/therobhrt/markup-process) you can find more complex example of MCSS methodology usage with video recording of development process.**
 
 <a id="dictionary"></a>
 ### Abbreviation dictionary

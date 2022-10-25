@@ -300,7 +300,7 @@ MCSSを利用するいくつかのケースではこのレイヤーは存在し�
 
 プロジェクトのサイトも同様にMCSSでデザインされています。[ソース]({{ site.baseurl }}/theme/stylesheets/stylesheet.css)を見るのをためらったりしないでください。
 
-**[Here](https://github.com/operatino/markup-process) you can find more complex example of MCSS methodology usage with video recording of development process.**
+**[Here](https://github.com/therobhrt/markup-process) you can find more complex example of MCSS methodology usage with video recording of development process.**
 
 <a id="dictionary"></a>
 ### 略語辞典

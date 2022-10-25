@@ -14,7 +14,7 @@ description: Multilayer CSS
 
 文档还在持续改进,和一些从属工具一起,比如前端文档引擎[Source](http://sourcejs.com). 原始的文档是用俄语写的,不是所有的内容都被翻译了,但是即将来临的更新会翻译所有的内容并且主要项目语言会变成英文.
 
-*有问题就在[Github 的 Issues](http://github.com/operatino/MCSS/issues) 或者 下面的评论框留言, 不要犹豫.*
+*有问题就在[Github 的 Issues](http://github.com/therobhrt/MCSS/issues) 或者 下面的评论框留言, 不要犹豫.*
 
 ### 快速导航
 
@@ -294,7 +294,7 @@ CSS 模块(和其中的组建) 被分割成不同的层, 每个层都有自己�
 
 本站也是基于 MCSS 理论来设计的, 快看看 [源码]({{ site.baseurl }}/theme/stylesheets/stylesheet.css).
 
-**[Here](https://github.com/operatino/markup-process) you can find more complex example of MCSS methodology usage with video recording of development process.**
+**[Here](https://github.com/therobhrt/markup-process) you can find more complex example of MCSS methodology usage with video recording of development process.**
 
 <a id="dictionary"></a>
 ### 缩写字典
