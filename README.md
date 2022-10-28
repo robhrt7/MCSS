@@ -28,4 +28,4 @@ ___
 
 Файлы в репозитории являютcя исходниками [сайта проекта](http://therobhrt.github.io/MCSS/) на основе [Jekyll](http://jekyllrb.com).
 
-Cодержимое репозитория свободно для распростронения и изменения при указании сайта оригинального проекта — [therobhrt.github.io/MCSS](http://therobhrt.github.io/MCSS/), и имени автора — [Харитонов Роберт](http://rhr.me).
+Cодержимое репозитория свободно для распростронения и изменения при указании сайта оригинального проекта — [therobhrt.github.io/MCSS](http://therobhrt.github.io/MCSS/).
