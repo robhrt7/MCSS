@@ -24,4 +24,4 @@ Big respect to [Matori](http://github.com/Matori) for Japanese translation.
 
 このリポジトリは[Jekyll](http://jekyllrb.com)と[GitHub Pages](http://pages.github.com/)をベースとしたプロジェクト[ウェブサイト](http://therobhrt.github.io/MCSS/ja/)のソースを含みます。
 
-このリポジトリ内の全てのコンテンツは、著者名[Robert Haritonov](http://rhr.me)とプロジェクトのウェブサイトへのリンク[therobhrt.github.io/MCSS](http://therobhrt.github.io/MCSS)を削除しないならば、自由に複製・配布を行えます。
+このリポジトリ内の全てのコンテンツは、著者名Robert Haritonovとプロジェクトのウェブサイトへのリンク[therobhrt.github.io/MCSS](http://therobhrt.github.io/MCSS)を削除しないならば、自由に複製・配布を行えます。
