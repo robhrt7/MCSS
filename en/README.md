@@ -24,4 +24,4 @@ Stay tuned, and follow updates on [@therobhrt](http://twitter.com/therobhrt)
 
 This repository contains project [website](http://therobhrt.github.io/MCSS/en/) sources, based on [Jekyll](http://jekyllrb.com) and [GitHub Pages](http://pages.github.com/).
 
-All content in this repository if free to copy and distribute leaving authors name [Robert Haritonov](http://rhr.me) and link to project website - [therobhrt.github.io/MCSS](http://therobhrt.github.io/MCSS).
+All content in this repository if free to copy and distribute leaving the link to project website - [therobhrt.github.io/MCSS](http://therobhrt.github.io/MCSS).
