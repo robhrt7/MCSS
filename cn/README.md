@@ -26,4 +26,4 @@ Big respect to [MaLucheng](http://github.com/teddy-ma) for Chinese translation.
 
 这个仓库包含项目[网站](http://therobhrt.github.io/MCSS/en/)源码, 基于[Jekyll](http://jekyllrb.com)和[GitHub Pages](http://pages.github.com/).
 
-所有的本仓库的内容都可以自由拷贝和分发保留作者名字 [Robert Haritonov](http://rhr.me) 和项目网站链接 - [therobhrt.github.io/MCSS](http://therobhrt.github.io/MCSS).
+所有的本仓库的内容都可以自由拷贝和分发保留作者名字 Robert Haritonov 和项目网站链接 - [therobhrt.github.io/MCSS](http://therobhrt.github.io/MCSS).
