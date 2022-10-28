@@ -9,8 +9,6 @@ ___
 
 Big respect to [Matori](http://github.com/Matori) for Japanese translation.
 
-*何か質問があれば[Issues section on Github](http://github.com/therobhrt/MCSS/issues)またはメールアドレス<r@rhr.me>まで。*
-
 ## Updates
 * 24.01.14. Adding [complex example](https://github.com/therobhrt/markup-process) of MCSS methodology usage with video recording of development process. MCSS is available in Russian, English, Japanese and Chinese.
 
