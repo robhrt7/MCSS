@@ -4,15 +4,15 @@ markdown: redcarpet
 safe: true
 
 project-name: MCSS
-project-url: http://github.com/therobhrt/MCSS
-project-descr-url: http://github.com/therobhrt/MCSS#%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B9%D0%BD%D1%8B%D0%B9-css
+project-url: http://github.com/robhrt7/MCSS
+project-descr-url: http://github.com/robhrt7/MCSS#%D0%9C%D0%BD%D0%BE%D0%B3%D0%BE%D1%81%D0%BB%D0%BE%D0%B9%D0%BD%D1%8B%D0%B9-css
 
 cssg-title: Css-o-Gram (CSSG)
 cssg-author: <a href="http://github.com/XOP">Евгений Хорошилов</a>
 cssg-url: http://cssg.rocks
 
 res-project-author: Роберт Харитонов
-res-project-author-twitter: <a href="http://twitter.com/therobhrt">@therobhrt</a>
+res-project-author-twitter: <a href="http://twitter.com/robhrt7">@robhrt7</a>
 
 res-watch-on-github: Посмотреть проект на
 res-download-archive: Скачать в архиве
@@ -26,15 +26,15 @@ res-navigation-links: Ссылки
 
 en-baseurl: /MCSS/en
 
-en-project-url: http://github.com/therobhrt/MCSS/en
-en-project-descr-url: http://github.com/therobhrt/MCSS/blob/gh-pages/en/README.md
+en-project-url: http://github.com/robhrt7/MCSS/en
+en-project-descr-url: http://github.com/robhrt7/MCSS/blob/gh-pages/en/README.md
 
 en-cssg-title: Css-o-Gram (CSSG)
 en-cssg-author: <a href="http://github.com/XOP">Evgeny Khoroshilov</a>
 en-cssg-url: http://cssg.rocks
 
 en-res-project-author: Robert Haritonov
-en-res-project-author-twitter: <a href="http://twitter.com/therobhrt">@therobhrt</a>
+en-res-project-author-twitter: <a href="http://twitter.com/robhrt7">@robhrt7</a>
 
 en-res-watch-on-github: Checkout project at
 en-res-download-archive: Download archive
@@ -48,15 +48,15 @@ en-res-navigation-links: Links
 
 ja-baseurl: /MCSS/ja
 
-ja-project-url: http://github.com/therobhrt/MCSS/ja
-ja-project-descr-url: http://github.com/therobhrt/MCSS/blob/gh-pages/ja/README.md
+ja-project-url: http://github.com/robhrt7/MCSS/ja
+ja-project-descr-url: http://github.com/robhrt7/MCSS/blob/gh-pages/ja/README.md
 
 ja-cssg-title: Css-o-Gram (CSSG)
 ja-cssg-author: <a href="http://github.com/XOP">Evgeny Khoroshilov</a>
 ja-cssg-url: http://cssg.rocks
 
 ja-res-project-author: Robert Haritonov
-ja-res-project-author-twitter: <a href="http://twitter.com/therobhrt">@therobhrt</a>
+ja-res-project-author-twitter: <a href="http://twitter.com/robhrt7">@robhrt7</a>
 
 ja-res-watch-on-github: Checkout project at
 ja-res-download-archive: Download archive
@@ -70,15 +70,15 @@ ja-res-navigation-links: リンク
 
 cn-baseurl: /MCSS/cn
 
-cn-project-url: http://github.com/therobhrt/MCSS/cn
-cn-project-descr-url: http://github.com/therobhrt/MCSS/blob/gh-pages/cn/README.md
+cn-project-url: http://github.com/robhrt7/MCSS/cn
+cn-project-descr-url: http://github.com/robhrt7/MCSS/blob/gh-pages/cn/README.md
 
 cn-cssg-title: Css-o-Gram (CSSG)
 cn-cssg-author: <a href="http://github.com/XOP">Evgeny Khoroshilov</a>
 cn-cssg-url: http://cssg.rocks
 
 cn-res-project-author: Robert Haritonov
-cn-res-project-author-twitter: <a href="http://twitter.com/therobhrt">@therobhrt</a>
+cn-res-project-author-twitter: <a href="http://twitter.com/robhrt7">@robhrt7</a>
 
 cn-res-watch-on-github: Checkout project at
 cn-res-download-archive: Download archive
